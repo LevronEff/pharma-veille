@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veille emploi pharmacie</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <style>
+    :root,[data-theme="light"]{
+      --font-body:'Satoshi',Inter,system-ui,sans-serif;
+      --font-display:'Satoshi',Inter,system-ui,sans-serif;
+      --text-xs:clamp(.75rem,.7rem + .25vw,.875rem);
+      --text-sm:clamp(.875rem,.8rem + .35vw,1rem);
+      --text-base:clamp(1rem,.95rem + .25vw,1.125rem);
+      --text-lg:clamp(1.125rem,1rem + .75vw,1.5rem);
+      --text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);
+      --space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;--space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;--space-16:4rem;
+      --color-bg:#f7f6f2;--color-surface:#f9f8f5;--color-surface-2:#fbfbf9;--color-surface-offset:#f3f0ec;--color-border:#d4d1ca;--color-divider:#dcd9d5;--color-text:#28251d;--color-text-muted:#6d6b66;--color-text-faint:#9a9892;--color-primary:#01696f;--color-primary-hover:#0c4e54;--color-success:#437a22;--color-warning:#964219;--color-error:#a12c7b;--shadow-sm:0 1px 2px rgba(35,31,24,.06);--shadow-md:0 8px 24px rgba(35,31,24,.08);--radius-sm:.375rem;--radius-md:.5rem;--radius-lg:.75rem;--radius-xl:1rem;
+    }
+    [data-theme="dark"]{
+      --color-bg:#171614;--color-surface:#1c1b19;--color-surface-2:#201f1d;--color-surface-offset:#1d1c1a;--color-border:#393836;--color-divider:#262523;--color-text:#cdccca;--color-text-muted:#a8a6a2;--color-text-faint:#7b7975;--color-primary:#4f98a3;--color-primary-hover:#227f8b;--color-success:#6daa45;--color-warning:#e8af34;--color-error:#d163a7;--shadow-sm:0 1px 2px rgba(0,0,0,.2);--shadow-md:0 8px 24px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box;margin:0;padding:0} html,body{height:100%} body{font-family:var(--font-body);font-size:var(--text-base);line-height:1.6;background:var(--color-bg);color:var(--color-text)} img,svg{display:block;max-width:100%} button,input,select,textarea{font:inherit;color:inherit} a{color:var(--color-primary);text-decoration:none} a:hover{text-decoration:underline} :focus-visible{outline:2px solid var(--color-primary);outline-offset:3px;border-radius:var(--radius-sm)}
+    .app{display:grid;grid-template-columns:300px 1fr;grid-template-rows:auto 1fr;height:100dvh}
+    .sidebar{grid-row:1 / -1;background:var(--color-surface);border-right:1px solid var(--color-divider);padding:var(--space-6);overflow:auto}
+    .header{display:flex;justify-content:space-between;align-items:center;padding:var(--space-4) var(--space-6);border-bottom:1px solid var(--color-divider);background:color-mix(in srgb,var(--color-surface) 92%, transparent);backdrop-filter:blur(8px);position:sticky;top:0;z-index:5}
+    .main{overflow:auto;padding:var(--space-6)}
+    .logo{display:flex;align-items:center;gap:var(--space-3);margin-bottom:var(--space-8)}
+    .logo svg{width:34px;height:34px;color:var(--color-primary)}
+    .logo-title{font-size:var(--text-lg);font-weight:700;line-height:1.1}
+    .muted{color:var(--color-text-muted)} .small{font-size:var(--text-xs)}
+    .section-title{font-size:var(--text-sm);text-transform:uppercase;letter-spacing:.08em;color:var(--color-text-muted);margin-bottom:var(--space-3)}
+    .panel{background:var(--color-surface-2);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--space-5);box-shadow:var(--shadow-sm)}
+    .sidebar .panel + .panel{margin-top:var(--space-4)}
+    .stack > * + *{margin-top:var(--space-3)}
+    .field label{display:block;font-size:var(--text-xs);font-weight:700;color:var(--color-text-muted);margin-bottom:var(--space-2)}
+    .field input,.field select,.field textarea{width:100%;border:1px solid var(--color-border);background:var(--color-bg);border-radius:var(--radius-md);padding:.72rem .8rem}
+    .field textarea{min-height:96px;resize:vertical}
+    .btn-row{display:flex;gap:var(--space-3);flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:.7rem 1rem;border-radius:var(--radius-md);border:1px solid transparent;font-size:var(--text-sm);font-weight:700;cursor:pointer}
+    .btn-primary{background:var(--color-primary);color:#fff}.btn-primary:hover{background:var(--color-primary-hover)} .btn-secondary{background:var(--color-surface-offset);border-color:var(--color-border)} .btn-ghost{border-color:var(--color-border);background:transparent}
+    .hero{display:flex;justify-content:space-between;gap:var(--space-6);align-items:flex-start;margin-bottom:var(--space-6)}
+    .hero h1{font-size:var(--text-xl);line-height:1.1;max-width:20ch}
+    .hero p{max-width:68ch;color:var(--color-text-muted)}
+    .kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:var(--space-4);margin-bottom:var(--space-6)}
+    .kpi{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:var(--space-5);box-shadow:var(--shadow-sm)}
+    .kpi .value{font-size:var(--text-xl);font-weight:700;line-height:1.1;font-variant-numeric:tabular-nums}
+    .kpi .label{font-size:var(--text-xs);color:var(--color-text-muted);text-transform:uppercase;letter-spacing:.08em}
+    .grid{display:grid;grid-template-columns:2fr 1fr;gap:var(--space-6)}
+    .toolbar{display:flex;gap:var(--space-3);flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:var(--space-4)}
+    .toolbar .filters{display:flex;gap:var(--space-3);flex-wrap:wrap}
+    .chip{display:inline-flex;align-items:center;border-radius:999px;padding:.3rem .65rem;font-size:var(--text-xs);font-weight:700}
+    .chip-new{background:rgba(1,105,111,.12);color:var(--color-primary)} .chip-mod{background:rgba(150,66,25,.14);color:var(--color-warning)} .chip-check{background:rgba(161,44,123,.12);color:var(--color-error)} .chip-high{background:rgba(67,122,34,.14);color:var(--color-success)} .chip-mid{background:rgba(232,175,52,.18);color:#7a5600} .chip-sent{background:var(--color-surface-offset);color:var(--color-text-muted);border:1px solid var(--color-border);margin-top:var(--space-1);white-space:nowrap}
+    tr.due > td{background:color-mix(in srgb,var(--color-warning) 10%,transparent)} tr.due .followup{color:var(--color-warning);font-weight:700}
+    table{width:100%;border-collapse:collapse} th,td{padding:var(--space-3);border-bottom:1px solid var(--color-divider);vertical-align:top;text-align:left} th{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--color-text-muted)} td{font-size:var(--text-sm)}
+    .table-wrap{overflow:auto}
+    .history-item{padding:var(--space-4);border-left:3px solid var(--color-primary);background:var(--color-surface);border-radius:0 var(--radius-lg) var(--radius-lg) 0}
+    .history-item + .history-item{margin-top:var(--space-3)}
+    .mail-preview{white-space:pre-wrap;background:var(--color-bg);border:1px dashed var(--color-border);border-radius:var(--radius-lg);padding:var(--space-4);min-height:240px;max-height:420px;overflow:auto;font-size:var(--text-sm)}
+    @media (max-width: 1024px){.app{grid-template-columns:1fr;grid-template-rows:auto auto 1fr}.sidebar{grid-row:auto;border-right:0;border-bottom:1px solid var(--color-divider)}.grid{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width: 640px){.hero{flex-direction:column}.kpis{grid-template-columns:1fr}.header{padding:var(--space-4)}.main,.sidebar{padding:var(--space-4)}}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4" aria-label="Logo veille emploi pharmacie">
+          <rect x="10" y="10" width="44" height="44" rx="12"></rect>
+          <path d="M22 32h20"></path>
+          <path d="M32 22v20"></path>
+          <circle cx="32" cy="32" r="5" fill="currentColor" stroke="none"></circle>
+        </svg>
+        <div>
+          <div class="logo-title">Veille emploi pharmacie</div>
+          <div class="small muted">Paris · 75 · 92 · 93 · 94</div>
+        </div>
+      </div>
+
+      <div class="panel stack">
+        <div class="section-title">Profil ciblé</div>
+        <p class="small">Préparatrice en pharmacie titulaire du DEUST, environ un an d’expérience en PUI et pharmacie hospitalière, sans diplôme hospitalier spécialisé validé.</p>
+      </div>
+
+      <div class="panel stack">
+        <div class="section-title">Filtres</div>
+        <div class="field"><label for="search">Recherche libre</label><input id="search" placeholder="PUI, HAD, officine, stérilisation..."></div>
+        <div class="field"><label for="contract">Contrat</label><select id="contract"><option value="all">Tous</option><option>Intérim</option><option>CDD</option><option>CDI</option></select></div>
+        <div class="field"><label for="adequation">Adéquation</label><select id="adequation"><option value="all">Toutes</option><option value="Élevée">Élevée</option><option value="Moyenne">Moyenne</option></select></div>
+        <div class="field"><label for="status">Statut</label><select id="status"><option value="all">Toutes</option><option value="Nouvelle">Nouvelles</option><option value="Modifiée">Modifiées</option><option value="À vérifier">À vérifier</option><option value="unsent">Non envoyées</option><option value="sent">Envoyées</option></select></div>
+        <label class="small" style="display:flex;align-items:center;gap:var(--space-2);cursor:pointer"><input type="checkbox" id="hideRefused" checked> Masquer les offres refusées</label>
+        <div class="field"><label for="dest">E-mail destinataire</label><input id="dest" type="email" placeholder="adresse@exemple.fr"></div>
+        <div class="btn-row">
+          <button class="btn btn-secondary" id="resetBtn">Réinitialiser</button>
+        </div>
+      </div>
+
+      <form class="panel stack" id="addForm">
+        <div class="section-title" id="formTitle">Ajouter une offre</div>
+        <div class="field"><label for="fTitle">Intitulé *</label><input id="fTitle" required></div>
+        <div class="field"><label for="fEmployer">Employeur / agence *</label><input id="fEmployer" required></div>
+        <div class="field"><label for="fLocation">Lieu *</label><input id="fLocation" required placeholder="Paris (75)"></div>
+        <div class="field"><label for="fContract">Contrat</label><input id="fContract" list="contractList" placeholder="Intérim, CDD, CDI..."><datalist id="contractList"><option value="Intérim"><option value="CDD"><option value="CDI"><option value="À vérifier"></datalist></div>
+        <div class="field"><label for="fDate">Date</label><input id="fDate" type="date"></div>
+        <div class="field"><label for="fPay">Rémunération</label><input id="fPay" placeholder="Non communiqué"></div>
+        <div class="field"><label for="fAdequation">Adéquation</label><select id="fAdequation"><option>Élevée</option><option selected>Moyenne</option></select></div>
+        <div class="field"><label for="fDiploma">Diplôme / conditions</label><input id="fDiploma"></div>
+        <div class="field"><label for="fNote">Note</label><textarea id="fNote"></textarea></div>
+        <div class="field"><label for="fLink">Lien</label><input id="fLink" type="url" placeholder="https://..."></div>
+        <div class="field"><label for="fFollowUp">Date de relance</label><input id="fFollowUp" type="date"></div>
+        <p class="small" id="formMsg" role="status"></p>
+        <div class="btn-row"><button class="btn btn-primary" type="submit" id="submitBtn">Ajouter</button><button class="btn btn-secondary" type="button" id="cancelEditBtn" style="display:none">Annuler</button></div>
+      </form>
+
+      <div class="panel stack">
+        <div class="section-title">Sauvegarde</div>
+        <div class="btn-row">
+          <button class="btn btn-secondary" id="exportBtn">Exporter JSON</button>
+          <button class="btn btn-secondary" id="importBtn">Importer JSON</button>
+          <input type="file" id="importFile" accept="application/json,.json" hidden>
+        </div>
+        <p class="small muted" id="backupReminder" style="display:none">Pensez à sauvegarder (Exporter JSON)</p>
+      </div>
+
+      <div class="panel stack">
+        <div class="section-title">Périmètre</div>
+        <ul class="small stack" style="list-style:none">
+          <li>Contrats : Intérim, CDD, CDI.</li>
+          <li>Zones : Paris et moins d’une heure depuis Gare du Nord.</li>
+          <li>Priorités : PUI, hôpital, clinique, HAD, EHPAD médicalisé, stérilisation, circuit du médicament, dispositifs médicaux, chimiothérapie, préparations nominatives, officine.</li>
+        </ul>
+      </div>
+    </aside>
+
+    <header class="header">
+      <div>
+        <div class="small muted">Tableau de suivi et récapitulatif manuel</div>
+        <strong>Outil simple sans envoi automatique</strong>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-ghost" data-theme-toggle aria-label="Basculer le thème">🌙</button>
+        <button class="btn btn-primary" id="mailBtn">Préparer le mail</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div>
+          <h1>Repérer les offres nouvelles ou modifiées pertinentes</h1>
+          <p>Cette application web centralise les offres d’emploi adaptées au profil ciblé, les dédoublonne, les classe par degré d’adéquation et prépare un récapitulatif en français pouvant être envoyé manuellement par e-mail.</p>
+        </div>
+        <div class="panel" style="min-width:280px">
+          <div class="section-title">Sources à surveiller</div>
+          <p class="small">France Travail, Staffsanté, Hellowork, Jobijoba, AP-HP, Choisir le service public, agences santé et sites d’établissements.</p>
+        </div>
+      </section>
+
+      <section class="kpis">
+        <article class="kpi"><div class="label">Candidatures envoyées</div><div class="value" id="kpiApplied">0</div></article>
+        <article class="kpi"><div class="label">Entretiens</div><div class="value" id="kpiInterview">0</div></article>
+        <article class="kpi"><div class="label">Nouvelles / modifiées</div><div class="value" id="kpiNew">0</div></article>
+        <article class="kpi"><div class="label">Adéquation élevée</div><div class="value" id="kpiHigh">0</div></article>
+        <article class="kpi"><div class="label">À vérifier</div><div class="value" id="kpiCheck">0</div></article>
+      </section>
+
+      <section class="grid">
+        <article class="panel">
+          <div class="toolbar">
+            <div>
+              <h2 style="font-size:var(--text-lg)">Offres dédoublonnées</h2>
+              <p class="small muted">N’inclut pas les annonces expirées. Les éléments ambigus sont marqués clairement.</p>
+            </div>
+            <div class="filters small muted" id="lastUpdate"></div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Statut</th>
+                  <th>Intitulé</th>
+                  <th>Employeur / agence</th>
+                  <th>Lieu</th>
+                  <th>Contrat</th>
+                  <th>Date</th>
+                  <th>Rémunération</th>
+                  <th>Adéquation / diplôme</th>
+                  <th>Lien</th>
+                  <th>Ma candidature</th>
+                  <th>Relance</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="offersBody"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <aside class="stack">
+          <section class="panel">
+            <h2 style="font-size:var(--text-lg);margin-bottom:var(--space-4)">Historique semaine en cours</h2>
+            <div id="historyList"></div>
+          </section>
+          <section class="panel">
+            <h2 style="font-size:var(--text-lg);margin-bottom:var(--space-4)">Récapitulatif e-mail</h2>
+            <div class="btn-row" style="margin-bottom:var(--space-4)">
+              <button class="btn btn-secondary" id="copyBtn">Copier le texte</button>
+              <button class="btn btn-secondary" id="markSentBtn">Marquer comme envoyées</button>
+              <button class="btn btn-primary" id="mailtoBtn">Ouvrir la messagerie</button>
+            </div>
+            <div class="mail-preview" id="mailPreview"></div>
+            <p class="small muted" id="mailHidden" style="display:none;margin-top:var(--space-3)"></p>
+          </section>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const DEFAULT_OFFERS = [
+      {status:'Nouvelle', title:'Préparateur·trice en pharmacie hospitalière — PUI', employer:'Tkcare', location:'Paris (75)', contract:'Intérim', date:'06/10/2026', pay:'Non communiqué', adequation:'Moyenne', diploma:'DEPPH ou conditions d’exercice à vérifier', note:'Mission PUI publiée à Paris ; exigence de diplôme à confirmer.', link:'https://www.tkcare.fr/mission/preparateurtrice-en-pharmacie-hospitaliere-pharmacie-hospitaliere-pui-paris-5311e3'},
+      {status:'Nouvelle', title:'Préparateur en pharmacie', employer:'Taga Médical', location:'Paris (75)', contract:'Intérim', date:'30/09/2026', pay:'À partir de 26 € bruts / heure', adequation:'Élevée', diploma:'Diplôme et établissement à confirmer', note:'Mission santé parisienne avec rémunération affichée.', link:'https://www.staffsante.fr/offres-emploi-de-preparateur-en-pharmacie/4530254-taga-medical-preparateur-en-pharmacie-h-f-paris'},
+      {status:'Modifiée', title:'Préparateur en pharmacie — HAD', employer:'PROMAN Paris Santé', location:'Hauts-de-Seine (92)', contract:'Intérim', date:'Récente', pay:'Non communiqué', adequation:'Élevée', diploma:'Expérience circuit du médicament valorisée', note:'Compatible avec environnement médicalisé ; lieu exact à préciser.', link:'https://www.staffsante.fr/offres-emploi-m-preparateur-en-pharmacie-d-hauts-de-seine'},
+      {status:'À vérifier', title:'Préparateur en pharmacie', employer:'I-Intérim', location:'Paris (75)', contract:'À vérifier', date:'Récente', pay:'Non communiqué', adequation:'Moyenne', diploma:'Nature du contrat à confirmer', note:'Diffusion ambigüe entre intérim et CDI temps partiel.', link:'https://www.staffsante.fr/offres-emploi-de-preparateur-en-pharmacie/4431709-i-interim-preparateur-en-pharmacie-h-f-paris'},
+      {status:'Modifiée', title:'Préparateur en pharmacie', employer:'Institut Curie', location:'Paris', contract:'CDD', date:'Récente', pay:'2 576 à 2 727 € brut / mois', adequation:'Élevée', diploma:'DEUST indiqué comme recevable selon l’annonce relayée', note:'Piste solide hors intérim strict.', link:'https://www.staffsante.fr/offres-emploi-de-preparateur-en-pharmacie/4483177-institut-curie-hopital-paris-preparateur-en-pharmaci'},
+      {status:'Nouvelle', title:'Préparateur en pharmacie - secteur médicaments F/H', employer:'AP-HP', location:'Paris 15', contract:'CDD ou titulaire', date:'Récente', pay:'Selon grille', adequation:'Moyenne', diploma:'Conditions précises à contrôler sur l’offre', note:'Cible hospitalière prioritaire à vérifier selon prérequis publiés.', link:'https://recrutement.aphp.fr/jobs/843472'}
+    ];
+
+    const STORAGE_KEY = 'offers';
+    const APPLY_STATES = ['À postuler','Postulé','Entretien','Refusé'];
+
+    function newId(){ return Date.now().toString(36) + Math.random().toString(36).slice(2, 8); }
+    function toISO(d){ return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; }
+    function todayISO(){ return toISO(new Date()); }
+    function weekStartISO(){
+      const d = new Date();
+      d.setDate(d.getDate() - (d.getDay() + 6) % 7);
+      return toISO(d);
+    }
+    // Accepte AAAA-MM-JJ ou jj/mm/aaaa ; renvoie AAAA-MM-JJ, ou '' si non reconnue.
+    function normalizeDate(v){
+      const str = String(v ?? '').trim();
+      let y, m, d, match;
+      if((match = str.match(/^(\d{4})-(\d{2})-(\d{2})$/))) [, y, m, d] = match.map(Number);
+      else if((match = str.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/))) [, d, m, y] = match.map(Number);
+      else return '';
+      const date = new Date(y, m - 1, d);
+      return date.getFullYear() === y && date.getMonth() === m - 1 && date.getDate() === d ? toISO(date) : '';
+    }
+    function formatDate(iso){
+      if(!iso) return 'Non datée';
+      const [y, m, d] = iso.split('-');
+      return `${d}/${m}/${y}`;
+    }
+    function normalizeOffer(o){
+      const s = v => (v == null ? '' : String(v));
+      return {
+        id: s(o.id) || newId(),
+        status: s(o.status) || 'Nouvelle',
+        title: s(o.title), employer: s(o.employer), location: s(o.location),
+        contract: s(o.contract), date: normalizeDate(o.date), pay: s(o.pay),
+        adequation: o.adequation === 'Élevée' ? 'Élevée' : 'Moyenne',
+        diploma: s(o.diploma), note: s(o.note), link: s(o.link),
+        application: APPLY_STATES.includes(o.application) ? o.application : 'À postuler',
+        addedAt: normalizeDate(o.addedAt) || todayISO(),
+        sentAt: normalizeDate(o.sentAt),
+        followUp: normalizeDate(o.followUp)
+      };
+    }
+    // Plus récente = addedAt le plus tardif, puis date de l'offre ; à égalité, la première rencontrée l'emporte.
+    function isMoreRecent(a, b){
+      if(a.addedAt !== b.addedAt) return a.addedAt > b.addedAt;
+      return a.date > b.date;
+    }
+    const APPLY_RANK = {'À postuler':0, 'Postulé':1, 'Entretien':2, 'Refusé':3};
+    const TEXT_FIELDS = ['status','title','employer','location','contract','pay','adequation','diploma','note','link'];
+    // Fusionne deux doublons ; garde l'id de « a » (l'offre déjà présente).
+    function mergeOffers(a, b){
+      const newer = isMoreRecent(b, a) ? b : a, older = newer === a ? b : a;
+      const m = {id: a.id};
+      TEXT_FIELDS.forEach(f => { m[f] = newer[f] || older[f]; });
+      m.application = APPLY_RANK[b.application] > APPLY_RANK[a.application] ? b.application : a.application;
+      m.sentAt = [a.sentAt, b.sentAt].filter(Boolean).sort()[0] || '';
+      m.date = [a.date, b.date].filter(Boolean).sort().pop() || '';
+      m.addedAt = [a.addedAt, b.addedAt].sort()[0];
+      m.followUp = [a.followUp, b.followUp].filter(Boolean).sort()[0] || '';
+      return m;
+    }
+    function dedupOffers(list){
+      const byKey = new Map();
+      list.forEach(o => {
+        const k = dedupKey(o);
+        byKey.set(k, byKey.has(k) ? mergeOffers(byKey.get(k), o) : o);
+      });
+      return [...byKey.values()];
+    }
+    function loadOffers(){
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if(raw){
+          const data = JSON.parse(raw);
+          if(Array.isArray(data)) return dedupOffers(data.map(normalizeOffer));
+        }
+      } catch(e) {}
+      return dedupOffers(DEFAULT_OFFERS.map(normalizeOffer));
+    }
+    function saveOffers(){
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(offers)); }
+      catch(e) { alert('Impossible d’enregistrer les données dans ce navigateur.'); }
+    }
+    let offers = loadOffers();
+    saveOffers();
+
+    function esc(v){
+      return String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    }
+    // Accord en nombre : singulier pour 0 et 1, comme en français.
+    function plural(n, singular, pluralForm){ return n <= 1 ? singular : pluralForm; }
+    function safeUrl(u){ return /^https?:\/\//i.test(String(u).trim()) ? String(u).trim() : ''; }
+    // Minuscules, sans accents, espaces normalisés : pour comparer des textes saisis.
+    function fold(v){
+      return String(v ?? '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/\s+/g, ' ').trim();
+    }
+    function dedupKey(o){
+      return [o.title, o.employer, o.location].map(fold).join('|');
+    }
+
+    const ids = {
+      body: document.getElementById('offersBody'),
+      history: document.getElementById('historyList'),
+      mail: document.getElementById('mailPreview'),
+      search: document.getElementById('search'),
+      contract: document.getElementById('contract'),
+      adequation: document.getElementById('adequation'),
+      status: document.getElementById('status'),
+      dest: document.getElementById('dest'),
+      hideRefused: document.getElementById('hideRefused')
+    };
+
+    function badge(status){
+      if(status==='Nouvelle') return '<span class="chip chip-new">Nouvelle</span>';
+      if(status==='Modifiée') return '<span class="chip chip-mod">Modifiée</span>';
+      return '<span class="chip chip-check">À vérifier</span>';
+    }
+    function adequationBadge(level){
+      return level==='Élevée' ? '<span class="chip chip-high">Élevée</span>' : '<span class="chip chip-mid">Moyenne</span>';
+    }
+    function filtered(){
+      const q = ids.search.value.trim().toLowerCase();
+      return offers.filter(o => {
+        const hay = [o.title,o.employer,o.location,o.contract,o.diploma,o.note].join(' ').toLowerCase();
+        const okQ = !q || hay.includes(q);
+        const okC = ids.contract.value === 'all' || fold(o.contract).includes(fold(ids.contract.value));
+        const okA = ids.adequation.value === 'all' || o.adequation === ids.adequation.value;
+        const st = ids.status.value;
+        const okS = st === 'all' || (st === 'sent' ? !!o.sentAt : st === 'unsent' ? !o.sentAt : o.status === st);
+        const okR = !ids.hideRefused.checked || o.application !== 'Refusé';
+        return okQ && okC && okA && okS && okR;
+      }).sort((a, b) => {
+        const cdi = (fold(b.contract).includes('cdi') ? 1 : 0) - (fold(a.contract).includes('cdi') ? 1 : 0);
+        if(cdi) return cdi;
+        if(!a.date || !b.date) return (a.date ? 0 : 1) - (b.date ? 0 : 1);
+        return b.date.localeCompare(a.date);
+      });
+    }
+    function isFollowUpDue(o){
+      return !!o.followUp && o.followUp <= todayISO() && o.application !== 'Refusé';
+    }
+    function render(){
+      const rows = filtered();
+      ids.body.innerHTML = rows.map(o => `
+        <tr${isFollowUpDue(o) ? ' class="due"' : ''}>
+          <td>${badge(o.status)}${o.sentAt ? `<br><span class="chip chip-sent">Envoyée le ${esc(formatDate(o.sentAt).slice(0, 5))}</span>` : ''}</td>
+          <td><strong>${esc(o.title)}</strong><br><span class="small muted">${esc(o.note)}</span></td>
+          <td>${esc(o.employer)}</td>
+          <td>${esc(o.location)}</td>
+          <td>${esc(o.contract)}</td>
+          <td>${esc(formatDate(o.date))}</td>
+          <td>${esc(o.pay)}</td>
+          <td>${adequationBadge(o.adequation)}<br><span class="small muted">${esc(o.diploma)}</span></td>
+          <td>${safeUrl(o.link) ? `<a href="${esc(safeUrl(o.link))}" target="_blank" rel="noopener noreferrer">Candidater</a>` : '<span class="muted">—</span>'}</td>
+          <td><div class="field"><select data-apply="${esc(o.id)}" aria-label="Ma candidature">${APPLY_STATES.map(s => `<option${s === o.application ? ' selected' : ''}>${s}</option>`).join('')}</select></div></td>
+          <td class="followup">${o.followUp ? esc(formatDate(o.followUp)) : '<span class="muted">—</span>'}</td>
+          <td><div class="btn-row"><button class="btn btn-ghost" data-edit="${esc(o.id)}" aria-label="Modifier cette offre">Modifier</button><button class="btn btn-ghost" data-delete="${esc(o.id)}" aria-label="Retirer cette offre">Retirer</button></div></td>
+        </tr>
+      `).join('');
+      // Ces deux indicateurs portent sur toutes les offres, pas seulement les offres filtrées.
+      document.getElementById('kpiApplied').textContent = offers.filter(o => o.application === 'Postulé' || o.application === 'Entretien').length;
+      document.getElementById('kpiInterview').textContent = offers.filter(o => o.application === 'Entretien').length;
+      document.getElementById('kpiNew').textContent = rows.filter(o => o.status === 'Nouvelle' || o.status === 'Modifiée').length;
+      document.getElementById('kpiHigh').textContent = rows.filter(o => o.adequation === 'Élevée').length;
+      document.getElementById('kpiCheck').textContent = rows.filter(o => o.status === 'À vérifier' || /vérifier/i.test(o.diploma) || /vérifier/i.test(o.note)).length;
+      document.getElementById('lastUpdate').textContent = 'Dernière actualisation : ' + new Date().toLocaleString('fr-FR');
+      const weekStart = weekStartISO();
+      ids.history.innerHTML = rows.filter(o => o.addedAt >= weekStart).map(o => `<div class="history-item"><strong>${esc(formatDate(o.date))}</strong><br>${esc(o.status)} · ${esc(o.title)}<br><span class="small muted">${esc(o.employer)} · ${esc(o.location)}</span></div>`).join('');
+      renderMail(rows);
+    }
+    let mailRows = [];
+    function renderMail(allRows){
+      const rows = mailRows = allRows.filter(o => !o.sentAt);
+      const text = [
+        'Objet : Veille emploi — préparatrice en pharmacie — nouvelles offres',
+        '',
+        'Bonjour,',
+        '',
+        'Voici le récapitulatif des offres pas encore envoyées :',
+        '',
+        ...(rows.length ? [] : ['Aucune offre à envoyer pour le moment.']),
+        ...rows.map((o, i) => `${i+1}. ${o.title}\n   Employeur / agence : ${o.employer}\n   Localisation : ${o.location}\n   Contrat : ${o.contract}\n   Date : ${formatDate(o.date)}\n   Rémunération : ${o.pay}\n   Adéquation : ${o.adequation}\n   Diplôme / conditions : ${o.diploma}\n   Lien : ${o.link}\n   Note : ${o.note}`),
+        '',
+        'Les offres présentant une ambiguïté de diplôme, de contrat ou d’établissement doivent être vérifiées avant candidature.'
+      ].join('\n');
+      ids.mail.textContent = text;
+      const shown = new Set(allRows);
+      const hidden = offers.filter(o => !o.sentAt && o.application !== 'Refusé' && !shown.has(o)).length;
+      const hiddenMsg = document.getElementById('mailHidden');
+      hiddenMsg.textContent = `${hidden} ${plural(hidden, 'offre non envoyée masquée', 'offres non envoyées masquées')} par les filtres`;
+      hiddenMsg.style.display = hidden ? '' : 'none';
+    }
+
+    ids.body.addEventListener('change', e => {
+      const id = e.target.dataset.apply;
+      if(!id) return;
+      const o = offers.find(x => x.id === id);
+      if(o){ o.application = e.target.value; saveOffers(); render(); }
+    });
+    ids.body.addEventListener('click', e => {
+      const editBtn = e.target.closest('[data-edit]');
+      if(editBtn){ startEdit(editBtn.dataset.edit); return; }
+      const btn = e.target.closest('[data-delete]');
+      if(!btn) return;
+      const o = offers.find(x => x.id === btn.dataset.delete);
+      if(!o || !confirm(`Retirer l’offre « ${o.title} » (${o.employer}) ?`)) return;
+      offers = offers.filter(x => x !== o);
+      saveOffers();
+      render();
+    });
+
+    const formMsg = document.getElementById('formMsg');
+    const addForm = document.getElementById('addForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const cancelEditBtn = document.getElementById('cancelEditBtn');
+    const FORM_FIELDS = {fTitle:'title', fEmployer:'employer', fLocation:'location', fContract:'contract', fDate:'date', fPay:'pay', fAdequation:'adequation', fDiploma:'diploma', fNote:'note', fLink:'link', fFollowUp:'followUp'};
+    const formTitle = document.getElementById('formTitle');
+    let editingId = null;
+
+    function setAddMode(){
+      editingId = null;
+      addForm.reset();
+      submitBtn.textContent = 'Ajouter';
+      formTitle.textContent = 'Ajouter une offre';
+      cancelEditBtn.style.display = 'none';
+    }
+    function startEdit(id){
+      const o = offers.find(x => x.id === id);
+      if(!o) return;
+      editingId = id;
+      Object.entries(FORM_FIELDS).forEach(([field, key]) => { document.getElementById(field).value = o[key]; });
+      submitBtn.textContent = 'Enregistrer';
+      formTitle.textContent = 'Modifier l’offre';
+      cancelEditBtn.style.display = '';
+      formMsg.textContent = '';
+      addForm.scrollIntoView({behavior:'smooth', block:'start'});
+      document.getElementById('fTitle').focus({preventScroll:true});
+    }
+    cancelEditBtn.addEventListener('click', () => {
+      setAddMode();
+      formMsg.textContent = '';
+    });
+
+    addForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const v = id => document.getElementById(id).value.trim();
+      const fields = {
+        title: v('fTitle'), employer: v('fEmployer'), location: v('fLocation'),
+        contract: v('fContract') || 'À vérifier',
+        date: v('fDate'),
+        pay: v('fPay') || 'Non communiqué',
+        adequation: v('fAdequation'), diploma: v('fDiploma'), note: v('fNote'), link: v('fLink'),
+        followUp: v('fFollowUp')
+      };
+      if(editingId){
+        const i = offers.findIndex(o => o.id === editingId);
+        if(i === -1){
+          setAddMode();
+          formMsg.style.color = 'var(--color-error)';
+          formMsg.textContent = 'Cette offre n’existe plus.';
+          return;
+        }
+        // id, addedAt, sentAt, statut et suivi de candidature sont conservés.
+        const updated = normalizeOffer({...offers[i], ...fields});
+        if(offers.some(o => o.id !== editingId && dedupKey(o) === dedupKey(updated))){
+          formMsg.style.color = 'var(--color-error)';
+          formMsg.textContent = 'Doublon : une autre offre a déjà le même intitulé, employeur et lieu.';
+          return;
+        }
+        offers[i] = updated;
+        saveOffers();
+        setAddMode();
+        formMsg.style.color = 'var(--color-success)';
+        formMsg.textContent = 'Offre modifiée.';
+        render();
+        return;
+      }
+      const offer = normalizeOffer({status: 'Nouvelle', ...fields});
+      if(offers.some(o => dedupKey(o) === dedupKey(offer))){
+        formMsg.style.color = 'var(--color-error)';
+        formMsg.textContent = 'Doublon : une offre avec le même intitulé, employeur et lieu existe déjà.';
+        return;
+      }
+      offers.unshift(offer);
+      saveOffers();
+      e.target.reset();
+      formMsg.style.color = 'var(--color-success)';
+      formMsg.textContent = 'Offre ajoutée.';
+      render();
+    });
+
+    const LAST_EXPORT_KEY = 'lastExport';
+    function updateBackupReminder(){
+      let last = '';
+      try { last = normalizeDate(localStorage.getItem(LAST_EXPORT_KEY)); } catch(e) {}
+      let stale = true;
+      if(last){
+        const [y, m, d] = last.split('-').map(Number);
+        const now = new Date();
+        const days = Math.round((new Date(now.getFullYear(), now.getMonth(), now.getDate()) - new Date(y, m - 1, d)) / 86400000);
+        stale = days > 7;
+      }
+      document.getElementById('backupReminder').style.display = stale ? '' : 'none';
+    }
+    updateBackupReminder();
+
+    document.getElementById('exportBtn').addEventListener('click', () => {
+      try { localStorage.setItem(LAST_EXPORT_KEY, todayISO()); } catch(e) {}
+      updateBackupReminder();
+      const blob = new Blob([JSON.stringify(offers, null, 2)], {type:'application/json'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `offres-pharmacie-${todayISO()}.json`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    });
+    const importFile = document.getElementById('importFile');
+    document.getElementById('importBtn').addEventListener('click', () => importFile.click());
+    importFile.addEventListener('change', async () => {
+      const file = importFile.files[0];
+      importFile.value = '';
+      if(!file) return;
+      try {
+        const data = JSON.parse(await file.text());
+        if(!Array.isArray(data)) throw new Error();
+        const indexByKey = new Map(offers.map((o, i) => [dedupKey(o), i]));
+        const usedIds = new Set(offers.map(o => o.id));
+        let added = 0, merged = 0;
+        data.forEach(raw => {
+          const o = normalizeOffer(raw);
+          const k = dedupKey(o);
+          if(indexByKey.has(k)){
+            const i = indexByKey.get(k);
+            offers[i] = mergeOffers(offers[i], o);
+            merged++;
+            return;
+          }
+          if(usedIds.has(o.id)) o.id = newId();
+          indexByKey.set(k, offers.length);
+          usedIds.add(o.id);
+          offers.push(o);
+          added++;
+        });
+        if(added || merged) saveOffers();
+        render();
+        alert(`Import terminé : ${added} ${plural(added, 'offre ajoutée', 'offres ajoutées')}, ${merged} ${plural(merged, 'doublon fusionné', 'doublons fusionnés')}.`);
+      } catch(err) {
+        alert('Fichier invalide : un tableau JSON d’offres est attendu.');
+      }
+    });
+    document.getElementById('resetBtn').addEventListener('click', () => {
+      ids.search.value = '';
+      ids.contract.value = 'all';
+      ids.adequation.value = 'all';
+      ids.status.value = 'all';
+      ids.hideRefused.checked = true;
+      render();
+    });
+    ids.hideRefused.addEventListener('change', render);
+    ['input','change'].forEach(evt => {
+      ids.search.addEventListener(evt, render);
+      ids.contract.addEventListener(evt, render);
+      ids.adequation.addEventListener(evt, render);
+      ids.status.addEventListener(evt, render);
+    });
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+      const sentRows = mailRows;
+      await navigator.clipboard.writeText(ids.mail.textContent);
+      alert('Récapitulatif copié dans le presse-papiers.');
+      askMarkSent(sentRows);
+    });
+    document.getElementById('markSentBtn').addEventListener('click', () => {
+      if(!mailRows.length){ alert('Aucune offre à marquer comme envoyée.'); return; }
+      askMarkSent(mailRows);
+    });
+    function askMarkSent(list){
+      if(!list.length || !confirm(list.length === 1 ? 'Marquer cette offre comme envoyée ?' : `Marquer ces ${list.length} offres comme envoyées ?`)) return;
+      const today = todayISO();
+      list.forEach(o => { o.sentAt = today; });
+      saveOffers();
+      render();
+    }
+    function openMail(){
+      const sentRows = mailRows;
+      const to = ids.dest.value.trim();
+      const subject = 'Veille emploi — préparatrice en pharmacie — nouvelles offres';
+      const body = ids.mail.textContent.replace(/^Objet\s*:\s.*\n\n/, '');
+      window.location.href = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      // Laisse la messagerie s'ouvrir avant la boîte de confirmation.
+      setTimeout(() => askMarkSent(sentRows), 500);
+    }
+    document.getElementById('mailBtn').addEventListener('click', openMail);
+    document.getElementById('mailtoBtn').addEventListener('click', openMail);
+    const toggle = document.querySelector('[data-theme-toggle]');
+    let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+    toggle.addEventListener('click', () => {
+      theme = theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+      toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+    });
+    render();
+  </script>
+</body>
+</html>
