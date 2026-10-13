@@ -3,3 +3,5 @@
 __pycache__/
 archive/
 .DS_Store
+data/csp.csv
+*.csv

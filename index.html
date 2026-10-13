@@ -50,7 +50,7 @@
     .toolbar{display:flex;gap:var(--space-3);flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:var(--space-4)}
     .toolbar .filters{display:flex;gap:var(--space-3);flex-wrap:wrap}
     .chip{display:inline-flex;align-items:center;border-radius:999px;padding:.3rem .65rem;font-size:var(--text-xs);font-weight:700}
-    .chip-new{background:rgba(1,105,111,.12);color:var(--color-primary)} .chip-mod{background:rgba(150,66,25,.14);color:var(--color-warning)} .chip-check{background:rgba(161,44,123,.12);color:var(--color-error)} .chip-high{background:rgba(67,122,34,.14);color:var(--color-success)} .chip-mid{background:rgba(232,175,52,.18);color:#7a5600} .chip-sent{background:var(--color-surface-offset);color:var(--color-text-muted);border:1px solid var(--color-border);margin-top:var(--space-1);white-space:nowrap}
+    .chip-new{background:rgba(1,105,111,.12);color:var(--color-primary)} .chip-mod{background:rgba(150,66,25,.14);color:var(--color-warning)} .chip-check{background:rgba(161,44,123,.12);color:var(--color-error)} .chip-high{background:rgba(67,122,34,.14);color:var(--color-success)} .chip-mid{background:rgba(232,175,52,.18);color:#7a5600} .chip-src{background:var(--color-surface-offset);color:var(--color-text-muted);border:1px solid var(--color-border);padding:.1rem .45rem;margin-right:var(--space-1);vertical-align:middle} .chip-sent{background:var(--color-surface-offset);color:var(--color-text-muted);border:1px solid var(--color-border);margin-top:var(--space-1);white-space:nowrap}
     tr.due > td{background:color-mix(in srgb,var(--color-warning) 10%,transparent)} tr.due .followup{color:var(--color-warning);font-weight:700}
     table{width:100%;border-collapse:collapse} th,td{padding:var(--space-3);border-bottom:1px solid var(--color-divider);vertical-align:top;text-align:left} th{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--color-text-muted)} td{font-size:var(--text-sm)}
     .table-wrap{overflow:auto}
@@ -138,6 +138,8 @@
         <strong>Outil simple sans envoi automatique</strong>
       </div>
       <div class="btn-row">
+        <span class="small muted" id="fetchMsg" role="status"></span>
+        <button class="btn btn-secondary" id="fetchBtn">Récupérer les nouvelles offres</button>
         <button class="btn btn-ghost" data-theme-toggle aria-label="Basculer le thème">🌙</button>
         <button class="btn btn-primary" id="mailBtn">Préparer le mail</button>
       </div>
@@ -151,7 +153,7 @@
         </div>
         <div class="panel" style="min-width:280px">
           <div class="section-title">Sources à surveiller</div>
-          <p class="small">France Travail, Staffsanté, Hellowork, Jobijoba, AP-HP, Choisir le service public, agences santé et sites d’établissements.</p>
+          <p class="small">Jooble, Choisir le service public, Staffsanté, Hellowork, Jobijoba, AP-HP, agences santé et sites d’établissements.</p>
         </div>
       </section>
 
@@ -212,6 +214,7 @@
           </section>
         </aside>
       </section>
+      <footer class="small muted" id="sourceFooter" style="margin-top:var(--space-6)"></footer>
     </main>
   </div>
 
@@ -263,7 +266,9 @@
         application: APPLY_STATES.includes(o.application) ? o.application : 'À postuler',
         addedAt: normalizeDate(o.addedAt) || todayISO(),
         sentAt: normalizeDate(o.sentAt),
-        followUp: normalizeDate(o.followUp)
+        followUp: normalizeDate(o.followUp),
+        ...(o.sourceId ? {sourceId: s(o.sourceId)} : {}),
+        ...(o.expired === true ? {expired: true} : {})
       };
     }
     // Plus récente = addedAt le plus tardif, puis date de l'offre ; à égalité, la première rencontrée l'emporte.
@@ -283,6 +288,9 @@
       m.date = [a.date, b.date].filter(Boolean).sort().pop() || '';
       m.addedAt = [a.addedAt, b.addedAt].sort()[0];
       m.followUp = [a.followUp, b.followUp].filter(Boolean).sort()[0] || '';
+      const sourceId = a.sourceId || b.sourceId;
+      if(sourceId) m.sourceId = sourceId;
+      if(a.expired && b.expired) m.expired = true;
       return m;
     }
     function dedupOffers(list){
@@ -341,6 +349,14 @@
       if(status==='Modifiée') return '<span class="chip chip-mod">Modifiée</span>';
       return '<span class="chip chip-check">À vérifier</span>';
     }
+    const SOURCE_BADGES = {ft: ['FT', 'France Travail'], jb: ['JB', 'Jooble'], csp: ['CSP', 'Choisir le service public']};
+    function sourceBadge(o){
+      const b = SOURCE_BADGES[String(o.sourceId || '').split('-')[0]];
+      return b ? `<span class="chip chip-src" title="${esc(b[1])}">${b[0]}</span>` : '';
+    }
+    function expiredBadge(o){
+      return o.expired ? '<br><span class="chip chip-check">Expirée</span>' : '';
+    }
     function adequationBadge(level){
       return level==='Élevée' ? '<span class="chip chip-high">Élevée</span>' : '<span class="chip chip-mid">Moyenne</span>';
     }
@@ -369,8 +385,8 @@
       const rows = filtered();
       ids.body.innerHTML = rows.map(o => `
         <tr${isFollowUpDue(o) ? ' class="due"' : ''}>
-          <td>${badge(o.status)}${o.sentAt ? `<br><span class="chip chip-sent">Envoyée le ${esc(formatDate(o.sentAt).slice(0, 5))}</span>` : ''}</td>
-          <td><strong>${esc(o.title)}</strong><br><span class="small muted">${esc(o.note)}</span></td>
+          <td>${badge(o.status)}${expiredBadge(o)}${o.sentAt ? `<br><span class="chip chip-sent">Envoyée le ${esc(formatDate(o.sentAt).slice(0, 5))}</span>` : ''}</td>
+          <td>${sourceBadge(o)}<strong>${esc(o.title)}</strong><br><span class="small muted">${esc(o.note)}</span></td>
           <td>${esc(o.employer)}</td>
           <td>${esc(o.location)}</td>
           <td>${esc(o.contract)}</td>
@@ -396,7 +412,7 @@
     }
     let mailRows = [];
     function renderMail(allRows){
-      const rows = mailRows = allRows.filter(o => !o.sentAt);
+      const rows = mailRows = allRows.filter(o => !o.sentAt && !o.expired);
       const text = [
         'Objet : Veille emploi — préparatrice en pharmacie — nouvelles offres',
         '',
@@ -411,7 +427,7 @@
       ].join('\n');
       ids.mail.textContent = text;
       const shown = new Set(allRows);
-      const hidden = offers.filter(o => !o.sentAt && o.application !== 'Refusé' && !shown.has(o)).length;
+      const hidden = offers.filter(o => !o.sentAt && !o.expired && o.application !== 'Refusé' && !shown.has(o)).length;
       const hiddenMsg = document.getElementById('mailHidden');
       hiddenMsg.textContent = `${hidden} ${plural(hidden, 'offre non envoyée masquée', 'offres non envoyées masquées')} par les filtres`;
       hiddenMsg.style.display = hidden ? '' : 'none';
@@ -628,7 +644,89 @@
       document.documentElement.setAttribute('data-theme', theme);
       toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
     });
+    function formatDateTime(iso){
+      const d = new Date(iso);
+      if(isNaN(d)) return '';
+      const p = n => String(n).padStart(2, '0');
+      return `${p(d.getDate())}/${p(d.getMonth() + 1)}/${d.getFullYear()} à ${p(d.getHours())}:${p(d.getMinutes())}`;
+    }
+    const SOURCES_KEY = 'offresSources';
+    const SOURCE_LINKS = {
+      'France Travail': 'https://francetravail.io',
+      'Jooble': 'https://fr.jooble.org',
+      'Choisir le service public': 'https://choisirleservicepublic.gouv.fr'
+    };
+    const SOURCE_NOTES = {
+      'Choisir le service public': ' — données ouvertes, <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" target="_blank" rel="noopener noreferrer">Licence Ouverte 2.0</a>'
+    };
+    // Cite uniquement les sources qui ont réellement fonctionné lors de la dernière mise à jour.
+    function renderFooter(sources){
+      const list = Object.entries(sources || {}).filter(([, s]) => s && s.ok);
+      document.getElementById('sourceFooter').innerHTML = list.length
+        ? 'Offres issues de ' + list.map(([name, s]) => {
+            const when = s.updatedAt ? formatDateTime(s.updatedAt) : '';
+            const link = SOURCE_LINKS[name] ? `<a href="${esc(SOURCE_LINKS[name])}" target="_blank" rel="noopener noreferrer">${esc(name)}</a>` : esc(name);
+            return link + (SOURCE_NOTES[name] || '') + (when ? ` (mise à jour le ${esc(when)})` : '');
+          }).join(' ; ')
+        : '';
+    }
+    // Intègre offres.json : le suivi des offres déjà connues par sourceId n'est jamais modifié.
+    async function fetchNewOffers(silent){
+      const msg = document.getElementById('fetchMsg');
+      const btn = document.getElementById('fetchBtn');
+      btn.disabled = true;
+      try {
+        const res = await fetch('offres.json', {cache: 'no-store'});
+        if(!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+        if(!data || !Array.isArray(data.offers)) throw new Error('format');
+        const today = todayISO();
+        const bySource = new Map(offers.filter(o => o.sourceId).map(o => [o.sourceId, o]));
+        // dedupKey : uniquement pour rattacher une offre récupérée à une offre saisie à la main (sans sourceId)
+        const byKey = new Map();
+        offers.forEach((o, i) => { if(!o.sourceId) byKey.set(dedupKey(o), i); });
+        const received = new Set();
+        let added = 0, known = 0;
+        data.offers.forEach(raw => {
+          if(!raw || !raw.sourceId) return;
+          const sid = String(raw.sourceId);
+          if(received.has(sid)) return;
+          received.add(sid);
+          const altIds = Array.isArray(raw.sourceIds) ? raw.sourceIds.map(String) : [];
+          altIds.forEach(i => received.add(i));
+          const existing = [sid, ...altIds].map(i => bySource.get(i)).find(Boolean);
+          if(existing){ delete existing.expired; known++; return; }
+          const o = normalizeOffer({...raw, addedAt: today});
+          const k = dedupKey(o);
+          if(byKey.has(k)){
+            const i = byKey.get(k);
+            offers[i] = mergeOffers(offers[i], o);
+            bySource.set(sid, offers[i]);
+            byKey.delete(k);
+            known++;
+            return;
+          }
+          bySource.set(sid, o);
+          offers.push(o);
+          added++;
+        });
+        // Par prudence, un fichier sans aucune offre n'expire rien.
+        if(received.size) offers.forEach(o => { if(o.sourceId && !received.has(o.sourceId)) o.expired = true; });
+        saveOffers();
+        try { localStorage.setItem(SOURCES_KEY, JSON.stringify(data.sources || {})); } catch(e) {}
+        renderFooter(data.sources);
+        render();
+        msg.textContent = `${added} ${plural(added, 'nouvelle offre', 'nouvelles offres')}, ${known} ${plural(known, 'déjà connue', 'déjà connues')}`;
+      } catch(err) {
+        if(!silent) msg.textContent = 'Impossible de récupérer offres.json (' + err.message + ').';
+      } finally {
+        btn.disabled = false;
+      }
+    }
+    document.getElementById('fetchBtn').addEventListener('click', () => fetchNewOffers(false));
+    try { renderFooter(JSON.parse(localStorage.getItem(SOURCES_KEY) || '{}')); } catch(e) {}
     render();
+    if(/^https?:$/.test(location.protocol)) fetchNewOffers(true);
   </script>
 </body>
 </html>
