@@ -1,27 +1,13 @@
 {
-  "updatedAt": "2026-10-19T09:31:32+00:00",
+  "updatedAt": "2026-10-20T09:04:08+00:00",
   "sources": {
     "Jooble": {
       "ok": true,
-      "count": 60,
-      "updatedAt": "2026-10-19T09:31:45+00:00"
+      "count": 58,
+      "updatedAt": "2026-10-20T09:04:21+00:00"
     }
   },
   "offers": [
-    {
-      "sourceId": "jb--7130795635730333856",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie hospitalière — H/F",
-      "employer": "Hopital Goüin",
-      "location": "Clichy, Hauts-de-Seine",
-      "contract": "Intérim",
-      "date": "2026-10-08",
-      "pay": "Non communiqué",
-      "adequation": "Élevée",
-      "diploma": "",
-      "note": "Préparateur en pharmacie hospitalière — H/F Situé à Clichy, l’Hôpital Gouin est un établissement de santé de 9 · Intérimaire",
-      "link": "https://fr.jooble.org/jdp/-7130795635730333856"
-    },
     {
       "sourceId": "jb-5372527740695596133",
       "status": "Nouvelle",
@@ -37,18 +23,18 @@
       "link": "https://fr.jooble.org/jdp/5372527740695596133"
     },
     {
-      "sourceId": "jb--830391039761057248",
+      "sourceId": "jb--7130795635730333856",
       "status": "Nouvelle",
-      "title": "PREPARATEUR (H/F) EN PHARMACIE",
-      "employer": "Institut Médico-chirurgical Montsouris",
-      "location": "Paris",
-      "contract": "À vérifier",
-      "date": "2026-09-27",
+      "title": "Préparateur en pharmacie hospitalière — H/F",
+      "employer": "Hopital Goüin",
+      "location": "Clichy, Hauts-de-Seine",
+      "contract": "Intérim",
+      "date": "2026-10-08",
       "pay": "Non communiqué",
       "adequation": "Élevée",
       "diploma": "",
-      "note": "PREPARATEUR (H/F) EN PHARMACIE 318146816 Sous l'autorité du responsable des activités médico-techniques de la · Temps plein",
-      "link": "https://fr.jooble.org/jdp/-830391039761057248"
+      "note": "Préparateur en pharmacie hospitalière — H/F Situé à Clichy, l’Hôpital Gouin est un établissement de santé de 9 · Intérimaire",
+      "link": "https://fr.jooble.org/jdp/-7130795635730333856"
     },
     {
       "sourceId": "jb-806748120445932121",
@@ -65,7 +51,7 @@
       "link": "https://fr.jooble.org/jdp/806748120445932121"
     },
     {
-      "sourceId": "jb--150962152038506727",
+      "sourceId": "jb--8942347565575954304",
       "status": "Nouvelle",
       "title": "Préparateur en pharmacie - Paris 75014 H/F",
       "employer": "Emploi Aide préparateur en pharmacie Paris 14e 75 | JoberGro...",
@@ -76,7 +62,21 @@
       "adequation": "Moyenne",
       "diploma": "",
       "note": "Préparateur en pharmacie - Paris 75014 H/F Emploi Préparateur en pharmacie H/F - Paris 75 Nous sommes à la rec · Temps plein",
-      "link": "https://fr.jooble.org/jdp/-150962152038506727"
+      "link": "https://fr.jooble.org/jdp/-8942347565575954304"
+    },
+    {
+      "sourceId": "jb--830391039761057248",
+      "status": "Nouvelle",
+      "title": "PREPARATEUR (H/F) EN PHARMACIE",
+      "employer": "Institut Médico-chirurgical Montsouris",
+      "location": "Paris",
+      "contract": "À vérifier",
+      "date": "2026-09-27",
+      "pay": "Non communiqué",
+      "adequation": "Élevée",
+      "diploma": "",
+      "note": "PREPARATEUR (H/F) EN PHARMACIE 318146816 Sous l'autorité du responsable des activités médico-techniques de la · Temps plein",
+      "link": "https://fr.jooble.org/jdp/-830391039761057248"
     },
     {
       "sourceId": "jb-6191854091260472690",
@@ -107,18 +107,18 @@
       "link": "https://fr.jooble.org/jdp/-3035100044883474505"
     },
     {
-      "sourceId": "jb-7738018535615270583",
+      "sourceId": "jb--2305338974780324890",
       "status": "Nouvelle",
-      "title": "Préparateur en pharmacie H/F - Garches 92",
-      "employer": "Emploi Aide préparateur en pharmacie Garches 92 | JoberGroup",
-      "location": "Garches, Hauts-de-Seine",
+      "title": "Préparateur en pharmacie H/F - Rueil-Malmaison 92",
+      "employer": "Emploi Aide préparateur en pharmacie Rueil-Malmaison 92 | Jo...",
+      "location": "Rueil-Malmaison, Hauts-de-Seine",
       "contract": "CDI",
-      "date": "2026-10-14",
+      "date": "2026-10-18",
       "pay": "1 800 € a 2 500 €",
       "adequation": "Moyenne",
       "diploma": "",
-      "note": "Préparateur en pharmacie H/F - Garches 92 Emploi Préparateur en pharmacie H/F - Garches 92 Nous recrutons un p · Temps plein",
-      "link": "https://fr.jooble.org/jdp/7738018535615270583"
+      "note": "Préparateur en pharmacie H/F - Rueil-Malmaison 92 Emploi Préparateur en pharmacie H/F - Rueil-Malmaison 92 Nou · Temps plein",
+      "link": "https://fr.jooble.org/jdp/-2305338974780324890"
     },
     {
       "sourceId": "jb--8601326957553564878",
@@ -135,74 +135,18 @@
       "link": "https://fr.jooble.org/jdp/-8601326957553564878"
     },
     {
-      "sourceId": "jb--2305338974780324890",
+      "sourceId": "jb--6998619213652836900",
       "status": "Nouvelle",
-      "title": "Préparateur en pharmacie H/F - Rueil-Malmaison 92",
-      "employer": "Emploi Aide préparateur en pharmacie Rueil-Malmaison 92 | Jo...",
-      "location": "Rueil-Malmaison, Hauts-de-Seine",
-      "contract": "CDI",
-      "date": "2026-10-18",
-      "pay": "1 800 € a 2 500 €",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "Préparateur en pharmacie H/F - Rueil-Malmaison 92 Emploi Préparateur en pharmacie H/F - Rueil-Malmaison 92 Nou · Temps plein",
-      "link": "https://fr.jooble.org/jdp/-2305338974780324890"
-    },
-    {
-      "sourceId": "jb--5835756773732989958",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie h/f",
-      "employer": "Medijob",
-      "location": "Paris",
-      "contract": "CDI",
-      "date": "2026-10-08",
-      "pay": "2 100 € a 3 100 €",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "Vous aimez le contact avec la clientèle et le travail précis en officine ? Medijob recherche un préparateur en · Temps plein",
-      "link": "https://fr.jooble.org/jdp/-5835756773732989958"
-    },
-    {
-      "sourceId": "jb--6750564102503810053",
-      "status": "Nouvelle",
-      "title": "Préparateur(trice) en Pharmacie d’Officine",
-      "employer": "Medijob",
-      "location": "Paris",
-      "contract": "CDI",
-      "date": "2026-10-14",
-      "pay": "2 000 € a 3 000 €",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "Offre d'emploi : Préparateur en Pharmacie (H/F) - CDI, 35h Type de contrat : CDI, 35h Horaires d'ouverture de · Temps plein",
-      "link": "https://fr.jooble.org/jdp/-6750564102503810053"
-    },
-    {
-      "sourceId": "jb-1117555409735155303",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie F/H",
+      "title": "Préparateur en pharmacie UFAQ F/H",
       "employer": "Non communiqué",
       "location": "Paris",
-      "contract": "Intérim",
-      "date": "2026-09-04",
-      "pay": "Non communiqué",
-      "adequation": "Élevée",
-      "diploma": "",
-      "note": "Sous l'autorité du cadre de santé et sous la responsabilité technique du pharmacien, le préparateur en pharmac · Intérimaire",
-      "link": "https://fr.jooble.org/jdp/1117555409735155303"
-    },
-    {
-      "sourceId": "jb--5585096832390603518",
-      "status": "À vérifier",
-      "title": "Préparateur en pharmacie hospitalière H/F Chimiothérapie / Paris Ouest",
-      "employer": "Madeline RH",
-      "location": "Boulogne-Billancourt",
       "contract": "À vérifier",
-      "date": "2026-10-17",
+      "date": "2026-10-16",
       "pay": "Non communiqué",
-      "adequation": "Élevée",
+      "adequation": "Moyenne",
       "diploma": "",
-      "note": "...internationale) et un niveau élevé de satisfaction patients. Il propose un modèle d'exercice axé sur la pha · Temps plein",
-      "link": "https://fr.jooble.org/desc/-5585096832390603518"
+      "note": "...Accompagnement pour la mise en place des procédures Organisation et enregistrement des formations Activité · Temps plein",
+      "link": "https://fr.jooble.org/jdp/-6998619213652836900"
     },
     {
       "sourceId": "jb-3295451073258514428",
@@ -219,6 +163,20 @@
       "link": "https://fr.jooble.org/jdp/3295451073258514428"
     },
     {
+      "sourceId": "jb--5835756773732989958",
+      "status": "Nouvelle",
+      "title": "Préparateur en pharmacie h/f",
+      "employer": "Medijob",
+      "location": "Paris",
+      "contract": "CDI",
+      "date": "2026-10-08",
+      "pay": "2 100 € a 3 100 €",
+      "adequation": "Moyenne",
+      "diploma": "",
+      "note": "Vous aimez le contact avec la clientèle et le travail précis en officine ? Medijob recherche un préparateur en · Temps plein",
+      "link": "https://fr.jooble.org/jdp/-5835756773732989958"
+    },
+    {
       "sourceId": "jb-8611722205136034155",
       "status": "Nouvelle",
       "title": "Préparateur(trice) en pharmacie hospitalière 60%",
@@ -233,18 +191,18 @@
       "link": "https://fr.jooble.org/jdp/8611722205136034155"
     },
     {
-      "sourceId": "jb--6998619213652836900",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie UFAQ F/H",
-      "employer": "Non communiqué",
-      "location": "Paris",
+      "sourceId": "jb-1065778383383331914",
+      "status": "À vérifier",
+      "title": "Préparateur en pharmacie hospitalière H/F Chimiothérapie / Paris Ouest",
+      "employer": "Madeline RH",
+      "location": "Boulogne-Billancourt",
       "contract": "À vérifier",
-      "date": "2026-10-16",
+      "date": "2026-10-12",
       "pay": "Non communiqué",
-      "adequation": "Moyenne",
+      "adequation": "Élevée",
       "diploma": "",
-      "note": "...Accompagnement pour la mise en place des procédures Organisation et enregistrement des formations Activité · Temps plein",
-      "link": "https://fr.jooble.org/jdp/-6998619213652836900"
+      "note": "...internationale) et un niveau élevé de satisfaction patients. Il propose un modèle d'exercice axé sur la pha · Temps plein",
+      "link": "https://fr.jooble.org/jdp/1065778383383331914"
     },
     {
       "sourceId": "jb-2926817455276791529",
@@ -261,46 +219,18 @@
       "link": "https://fr.jooble.org/jdp/2926817455276791529"
     },
     {
-      "sourceId": "jb--8276104059920276622",
+      "sourceId": "jb--6750564102503810053",
       "status": "Nouvelle",
-      "title": "Préparateur en pharmacie h/f",
+      "title": "Préparateur(trice) en Pharmacie d’Officine",
       "employer": "Medijob",
-      "location": "Neuilly-sur-Seine, Hauts-de-Seine",
-      "contract": "À vérifier",
-      "date": "2026-10-01",
-      "pay": "Non communiqué",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "Dans une petite pharmacie familiale de quartier agréable, vous travaillez avec une clientèle fidèle et une équ · Temps plein",
-      "link": "https://fr.jooble.org/jdp/-8276104059920276622"
-    },
-    {
-      "sourceId": "jb--3978814969875802389",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie (H/F) Pharmacie à usage interne",
-      "employer": "Fondation Santé Service",
-      "location": "Villeneuve-la-Garenne, Hauts-de-Seine",
-      "contract": "CDD",
-      "date": "2026-10-11",
-      "pay": "25k € a 35k €/an",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "...santeservice.fr pour recevoir le lien de connexion. Dans le cadre d'un remplacement, la Fondation SANTE SER · Intérimaire",
-      "link": "https://fr.jooble.org/jdp/-3978814969875802389"
-    },
-    {
-      "sourceId": "jb--1601943518130506207",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie h/f",
-      "employer": "Medijob",
-      "location": "Issy-les-Moulineaux, Hauts-de-Seine",
+      "location": "Paris",
       "contract": "CDI",
-      "date": "2026-10-02",
-      "pay": "2 100 € a 2 700 €",
+      "date": "2026-10-19",
+      "pay": "2 000 € a 3 000 €",
       "adequation": "Moyenne",
       "diploma": "",
-      "note": "Medijob recrute un Préparateur en pharmacie h/f pour une officine de 200 m2. Vous travaillez en CDI 35 h avec · Temps plein",
-      "link": "https://fr.jooble.org/jdp/-1601943518130506207"
+      "note": "Offre d'emploi : Préparateur en Pharmacie (H/F) - CDI, 35h Type de contrat : CDI, 35h Horaires d'ouverture de · Temps plein",
+      "link": "https://fr.jooble.org/jdp/-6750564102503810053"
     },
     {
       "sourceId": "jb-7828191730583174484",
@@ -373,6 +303,48 @@
       "link": "https://fr.jooble.org/jdp/-8331661836504174669"
     },
     {
+      "sourceId": "jb-159230578032012900",
+      "status": "Nouvelle",
+      "title": "Préparateur en pharmacie (H/F) Pharmacie à usage interne",
+      "employer": "FONDATION SANTE SERVICE",
+      "location": "Villeneuve-la-Garenne, Hauts-de-Seine",
+      "contract": "CDD",
+      "date": "2026-10-09",
+      "pay": "25k € a 35k €/an",
+      "adequation": "Moyenne",
+      "diploma": "",
+      "note": "...pour recevoir le lien de connexion. Votre mission: Dans le cadre d'un remplacement, la Fondation SANTE SERV · Intérimaire",
+      "link": "https://fr.jooble.org/jdp/159230578032012900"
+    },
+    {
+      "sourceId": "jb--1601943518130506207",
+      "status": "Nouvelle",
+      "title": "Préparateur en pharmacie h/f",
+      "employer": "Medijob",
+      "location": "Issy-les-Moulineaux, Hauts-de-Seine",
+      "contract": "CDI",
+      "date": "2026-10-02",
+      "pay": "2 100 € a 2 700 €",
+      "adequation": "Moyenne",
+      "diploma": "",
+      "note": "Medijob recrute un Préparateur en pharmacie h/f pour une officine de 200 m2. Vous travaillez en CDI 35 h avec · Temps plein",
+      "link": "https://fr.jooble.org/jdp/-1601943518130506207"
+    },
+    {
+      "sourceId": "jb--8276104059920276622",
+      "status": "Nouvelle",
+      "title": "Préparateur en pharmacie h/f",
+      "employer": "Medijob",
+      "location": "Neuilly-sur-Seine, Hauts-de-Seine",
+      "contract": "À vérifier",
+      "date": "2026-10-01",
+      "pay": "Non communiqué",
+      "adequation": "Moyenne",
+      "diploma": "",
+      "note": "Dans une petite pharmacie familiale de quartier agréable, vous travaillez avec une clientèle fidèle et une équ · Temps plein",
+      "link": "https://fr.jooble.org/jdp/-8276104059920276622"
+    },
+    {
       "sourceId": "jb-6264444626203580457",
       "status": "Nouvelle",
       "title": "Préparateur en pharmacie - Bloc Opératoire - H/F",
@@ -399,6 +371,20 @@
       "diploma": "",
       "note": "Contribuer à l'amélioration de la qualité des prestations et des services rendus aux clients. Activités perman · Temps plein",
       "link": "https://fr.jooble.org/jdp/-2321335675980043127"
+    },
+    {
+      "sourceId": "jb--274001667659805456",
+      "status": "Nouvelle",
+      "title": "Préparateur en pharmacie en pharmacie à usage intérieur centralisée",
+      "employer": "Centre d'action sociale de la ville de Paris CASVP",
+      "location": "Paris 15e",
+      "contract": "À vérifier",
+      "date": "2026-09-11",
+      "pay": "Non communiqué",
+      "adequation": "Élevée",
+      "diploma": "",
+      "note": "...en direction des séniors parisiens les plus vulnérables. La pharmacie à usage intérieur centralisée et robo",
+      "link": "https://fr.jooble.org/jdp/-274001667659805456"
     },
     {
       "sourceId": "jb-8422262589281235193",
@@ -429,64 +415,82 @@
       "link": "https://fr.jooble.org/jdp/845727830340085276"
     },
     {
-      "sourceId": "jb-7500843515165497370",
+      "sourceId": "jb-1990026549279024081",
       "status": "Nouvelle",
-      "title": "Préparateur en pharmacie en pharmacie à usage intérieur centralisée F/H",
-      "employer": "Ville de Paris",
-      "location": "Paris 15e",
+      "title": "Préparateur en Pharmacie F/H",
+      "employer": "Hôpital La Roche-Guyon Groupe hospitalier AP-HP.Sorbonne Uni...",
+      "location": "Villejuif, Val-de-Marne",
       "contract": "À vérifier",
-      "date": "2026-10-12",
+      "date": "2026-10-20",
+      "pay": "Non communiqué",
+      "adequation": "Moyenne",
+      "diploma": "",
+      "note": "...horaire : 08h30 -17h00 Quotité de temps de travail :100 % du lundi au vendredi Diplôme d'État requis : - Di",
+      "link": "https://fr.jooble.org/jdp/1990026549279024081",
+      "sourceIds": [
+        "jb-1990026549279024081",
+        "jb--6368741076543668911"
+      ]
+    },
+    {
+      "sourceId": "jb-4407735503156859045",
+      "status": "Nouvelle",
+      "title": "Préparateur en pharmacie - h/f",
+      "employer": "CENTRE HOSPITALIER DES QUATRE VILLES",
+      "location": "Saint-Cloud, Hauts-de-Seine",
+      "contract": "À vérifier",
+      "date": "2026-10-15",
       "pay": "Non communiqué",
       "adequation": "Élevée",
       "diploma": "",
-      "note": "...ergothér., psychomotr., orthopt., tech.lab.méd., manip.radios, préparateur pharma., diététicien... ...en di · Temps plein",
-      "link": "https://fr.jooble.org/jdp/7500843515165497370"
+      "note": "...hôpital de jour (soins ambulatoires). Description du poste : Le Centre Hospitalier des Quatre Villes (92) r · Temps plein",
+      "link": "https://fr.jooble.org/jdp/4407735503156859045",
+      "sourceIds": [
+        "jb-4407735503156859045",
+        "jb-5769407732849026335"
+      ]
     },
     {
-      "sourceId": "jb--5237131989445282200",
+      "sourceId": "jb--1600708931701629663",
+      "status": "Nouvelle",
+      "title": "Préparateur en pharmacie h/f",
+      "employer": "Medijob",
+      "location": "Paris 16e",
+      "contract": "CDI",
+      "date": "2026-10-19",
+      "pay": "Non communiqué",
+      "adequation": "Moyenne",
+      "diploma": "",
+      "note": "Vous aimez servir les clients avec précision et garder le rythme en officine ? Notre client, Pharmacie située · Temps plein",
+      "link": "https://fr.jooble.org/jdp/-1600708931701629663"
+    },
+    {
+      "sourceId": "jb-943201384582931155",
+      "status": "Nouvelle",
+      "title": "Préparateur(trice) en Pharmacie d’Officine",
+      "employer": "Medijob",
+      "location": "Seine-Saint-Denis (93)",
+      "contract": "CDI",
+      "date": "2026-10-19",
+      "pay": "2 000 € a 3 500 €",
+      "adequation": "Moyenne",
+      "diploma": "",
+      "note": "Offre d'emploi : Préparateur en Pharmacie (H/F) - CDI, 35h Type de contrat : CDI, 35h Horaires d'ouverture de · Temps plein",
+      "link": "https://fr.jooble.org/jdp/943201384582931155"
+    },
+    {
+      "sourceId": "jb--866070489345458491",
       "status": "Nouvelle",
       "title": "Préparateur en Pharmacie - H/F",
       "employer": "Non communiqué",
       "location": "Saint-Cloud, Hauts-de-Seine",
       "contract": "À vérifier",
-      "date": "2026-09-23",
+      "date": "2026-10-06",
       "pay": "Non communiqué",
       "adequation": "Élevée",
       "diploma": "",
       "note": "du poste : Le Centre Hospitalier des Quatre Villes (92) recrute un (e) Préparatrice en pharmacie pour son serv · Temps plein",
-      "link": "https://fr.jooble.org/jdp/-5237131989445282200",
-      "sourceIds": [
-        "jb--5237131989445282200",
-        "jb--866070489345458491"
-      ]
-    },
-    {
-      "sourceId": "jb--7662884116135542556",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie (H/F)",
-      "employer": "MATALTO | Cabinet de recrutement",
-      "location": "Suresnes, Hauts-de-Seine",
-      "contract": "CDI",
-      "date": "2026-10-14",
-      "pay": "Non communiqué",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "...OFFRE D’EMPLOI | Préparateur( trice) en Pharmacie Suresnes (92) Nous recherchons un Préparateur en Pharmaci · Temps plein",
-      "link": "https://fr.jooble.org/jdp/-7662884116135542556"
-    },
-    {
-      "sourceId": "jb-5899436446815656799",
-      "status": "Nouvelle",
-      "title": "Préparateur(trice) en Pharmacie d’Officine",
-      "employer": "Medijob",
-      "location": "Hauts-de-Seine (92)",
-      "contract": "CDI",
-      "date": "2026-10-14",
-      "pay": "2 000 € a 3 500 €",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "Offre d'emploi : Préparateur en Pharmacie (H/F) - CDI, 35h Type de contrat : CDI, 35h Horaires d'ouverture de · Temps plein",
-      "link": "https://fr.jooble.org/jdp/5899436446815656799"
+      "link": "https://fr.jooble.org/jdp/-866070489345458491"
     },
     {
       "sourceId": "jb--8226277103634750348",
@@ -517,54 +521,18 @@
       "link": "https://fr.jooble.org/jdp/-2540630454237792071"
     },
     {
-      "sourceId": "jb-5769407732849026335",
+      "sourceId": "jb--60874183858800515",
       "status": "Nouvelle",
-      "title": "Préparateur en pharmacie - h/f",
-      "employer": "CENTRE HOSPITALIER DES QUATRE VILLES",
-      "location": "Saint-Cloud, Hauts-de-Seine",
-      "contract": "À vérifier",
-      "date": "2026-10-06",
-      "pay": "Non communiqué",
-      "adequation": "Élevée",
-      "diploma": "",
-      "note": "...hôpital de jour (soins ambulatoires). Description du poste : Le Centre Hospitalier des Quatre Villes (92) r · Temps plein",
-      "link": "https://fr.jooble.org/jdp/5769407732849026335",
-      "sourceIds": [
-        "jb-5769407732849026335",
-        "jb-4407735503156859045"
-      ]
-    },
-    {
-      "sourceId": "jb--6368741076543668911",
-      "status": "Nouvelle",
-      "title": "Préparateur en Pharmacie F/H",
-      "employer": "Hôpital Saint-Antoine Groupe hospitalier AP-HP.Sorbonne Univ...",
-      "location": "Villejuif, Val-de-Marne",
-      "contract": "À vérifier",
-      "date": "2026-09-14",
-      "pay": "Non communiqué",
+      "title": "Préparateur(trice) en Pharmacie d’Officine",
+      "employer": "Medijob",
+      "location": "Val-de-Marne (94)",
+      "contract": "CDI",
+      "date": "2026-10-19",
+      "pay": "2 000 € a 3 500 €",
       "adequation": "Moyenne",
       "diploma": "",
-      "note": "...horaire : 08h30 -17h00 Quotité de temps de travail :100 % du lundi au vendredi Diplôme d'État requis : - Di",
-      "link": "https://fr.jooble.org/jdp/-6368741076543668911",
-      "sourceIds": [
-        "jb--6368741076543668911",
-        "jb-1990026549279024081"
-      ]
-    },
-    {
-      "sourceId": "jb-5423014805909177438",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie UFAQ F/H",
-      "employer": "Non communiqué",
-      "location": "Hauts-de-Seine (92)",
-      "contract": "À vérifier",
-      "date": "2026-10-16",
-      "pay": "Non communiqué",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "Je choisis ma région Voir toute la rubrique",
-      "link": "https://fr.jooble.org/jdp/5423014805909177438"
+      "note": "Offre d'emploi : Préparateur en Pharmacie (H/F) - CDI, 35h Type de contrat : CDI, 35h Horaires d'ouverture de · Temps plein",
+      "link": "https://fr.jooble.org/jdp/-60874183858800515"
     },
     {
       "sourceId": "jb-8140577964580602191",
@@ -581,18 +549,74 @@
       "link": "https://fr.jooble.org/jdp/8140577964580602191"
     },
     {
-      "sourceId": "jb--60874183858800515",
+      "sourceId": "jb--7186280249361387821",
+      "status": "Nouvelle",
+      "title": "Préparateur en pharmacie h/f",
+      "employer": "Medijob",
+      "location": "Paris 16e",
+      "contract": "À vérifier",
+      "date": "2026-10-19",
+      "pay": "Non communiqué",
+      "adequation": "Moyenne",
+      "diploma": "",
+      "note": "Vous cherchez une pharmacie où le conseil prend toute sa place ? Dans cette officine de quartier du 16e, vous · Temps plein",
+      "link": "https://fr.jooble.org/jdp/-7186280249361387821"
+    },
+    {
+      "sourceId": "jb--6660105737656112845",
+      "status": "Nouvelle",
+      "title": "Préparateur en pharmacie H/F - Garches 92",
+      "employer": "JoberGroup",
+      "location": "Garches, Hauts-de-Seine",
+      "contract": "À vérifier",
+      "date": "2026-10-13",
+      "pay": "21.6k € a 30k €/an",
+      "adequation": "Moyenne",
+      "diploma": "",
+      "note": "...paramédical à votre écoute. Un service 100% gratuit dont 99% de nos candidats sont satisfaits. Présentation",
+      "link": "https://fr.jooble.org/jdp/-6660105737656112845"
+    },
+    {
+      "sourceId": "jb--7662884116135542556",
+      "status": "Nouvelle",
+      "title": "Préparateur en pharmacie (H/F)",
+      "employer": "MATALTO | Cabinet de recrutement",
+      "location": "Suresnes, Hauts-de-Seine",
+      "contract": "CDI",
+      "date": "2026-10-14",
+      "pay": "Non communiqué",
+      "adequation": "Moyenne",
+      "diploma": "",
+      "note": "...OFFRE D’EMPLOI | Préparateur( trice) en Pharmacie Suresnes (92) Nous recherchons un Préparateur en Pharmaci · Temps plein",
+      "link": "https://fr.jooble.org/jdp/-7662884116135542556"
+    },
+    {
+      "sourceId": "jb--6886756167524339951",
+      "status": "À vérifier",
+      "title": "Préparateur(trice) en Pharmacie d’Officine, La Réunion",
+      "employer": "Medijob",
+      "location": "Saint-Denis",
+      "contract": "CDI",
+      "date": "2026-10-19",
+      "pay": "2 000 € a 3 200 €",
+      "adequation": "Moyenne",
+      "diploma": "",
+      "note": "Offre d'emploi : Préparateur en Pharmacie (H/F) - CDI, 35h Type de contrat : CDI, 35h Horaires d'ouverture de · Temps plein",
+      "link": "https://fr.jooble.org/jdp/-6886756167524339951"
+    },
+    {
+      "sourceId": "jb-5899436446815656799",
       "status": "Nouvelle",
       "title": "Préparateur(trice) en Pharmacie d’Officine",
       "employer": "Medijob",
-      "location": "Val-de-Marne (94)",
+      "location": "Hauts-de-Seine (92)",
       "contract": "CDI",
-      "date": "2026-10-14",
+      "date": "2026-10-19",
       "pay": "2 000 € a 3 500 €",
       "adequation": "Moyenne",
       "diploma": "",
       "note": "Offre d'emploi : Préparateur en Pharmacie (H/F) - CDI, 35h Type de contrat : CDI, 35h Horaires d'ouverture de · Temps plein",
-      "link": "https://fr.jooble.org/jdp/-60874183858800515"
+      "link": "https://fr.jooble.org/jdp/5899436446815656799"
     },
     {
       "sourceId": "jb--4095965426021582258",
@@ -601,7 +625,7 @@
       "employer": "Medijob",
       "location": "Paris 20e",
       "contract": "À vérifier",
-      "date": "2026-10-14",
+      "date": "2026-10-19",
       "pay": "Non communiqué",
       "adequation": "Moyenne",
       "diploma": "",
@@ -609,88 +633,18 @@
       "link": "https://fr.jooble.org/jdp/-4095965426021582258"
     },
     {
-      "sourceId": "jb--7186280249361387821",
+      "sourceId": "jb-5423014805909177438",
       "status": "Nouvelle",
-      "title": "Préparateur en pharmacie h/f",
-      "employer": "Medijob",
-      "location": "Paris 16e",
-      "contract": "À vérifier",
-      "date": "2026-10-01",
-      "pay": "Non communiqué",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "Vous cherchez une pharmacie où le conseil prend toute sa place ? Dans cette officine de quartier du 16e, vous · Temps plein",
-      "link": "https://fr.jooble.org/jdp/-7186280249361387821"
-    },
-    {
-      "sourceId": "jb--1600708931701629663",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie h/f",
-      "employer": "Medijob",
-      "location": "Paris 16e",
-      "contract": "CDI",
-      "date": "2026-10-01",
-      "pay": "Non communiqué",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "Vous aimez servir les clients avec précision et garder le rythme en officine ? Notre client, Pharmacie située · Temps plein",
-      "link": "https://fr.jooble.org/jdp/-1600708931701629663"
-    },
-    {
-      "sourceId": "jb-943201384582931155",
-      "status": "Nouvelle",
-      "title": "Préparateur(trice) en Pharmacie d’Officine",
-      "employer": "Medijob",
-      "location": "Seine-Saint-Denis (93)",
-      "contract": "CDI",
-      "date": "2026-10-14",
-      "pay": "2 000 € a 3 500 €",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "Offre d'emploi : Préparateur en Pharmacie (H/F) - CDI, 35h Type de contrat : CDI, 35h Horaires d'ouverture de · Temps plein",
-      "link": "https://fr.jooble.org/jdp/943201384582931155"
-    },
-    {
-      "sourceId": "jb-8797427157620486625",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie (H/F)",
-      "employer": "MATALTO",
-      "location": "Meudon-la-Forêt, 92360",
-      "contract": "CDI",
-      "date": "2026-09-16",
-      "pay": "2 500 €",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "... Préparateur en Pharmacie H/F – CDI 30h à 35h – Meudon-la-Forêt (92) Une pharmacie située à Meudon-la-Forêt · Temps plein",
-      "link": "https://fr.jooble.org/jdp/8797427157620486625"
-    },
-    {
-      "sourceId": "jb--2110199175978350285",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie UPC temps plein H/F",
+      "title": "Préparateur en pharmacie UFAQ F/H",
       "employer": "Non communiqué",
-      "location": "Nogent-sur-Marne, Val-de-Marne",
-      "contract": "Intérim",
-      "date": "2026-09-25",
-      "pay": "Non communiqué",
-      "adequation": "Élevée",
-      "diploma": "",
-      "note": "...de production des Cytotoxiques (UPC) fabrique environ 28000 préparations cytotoxiques par an pour 6 établis · Intérimaire",
-      "link": "https://fr.jooble.org/jdp/-2110199175978350285"
-    },
-    {
-      "sourceId": "jb--8174396515446444196",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie hospitalière temps plein pôle médico-transversal pharmacie centrale de villejuif - h/f",
-      "employer": "GROUPE HOSPITALIER FONDATION VALLEE - PAUL GUIRAUD",
-      "location": "Villejuif, Val-de-Marne",
+      "location": "Hauts-de-Seine (92)",
       "contract": "À vérifier",
-      "date": "2026-09-28",
+      "date": "2026-10-16",
       "pay": "Non communiqué",
       "adequation": "Moyenne",
       "diploma": "",
-      "note": "...produits périmés et aux inventaires réguliers Réaliser les préparations magistrales et contribuer aux vigil · Temps plein",
-      "link": "https://fr.jooble.org/jdp/-8174396515446444196"
+      "note": "Je choisis ma région Voir toute la rubrique",
+      "link": "https://fr.jooble.org/jdp/5423014805909177438"
     },
     {
       "sourceId": "jb-758259936409137487",
@@ -707,32 +661,46 @@
       "link": "https://fr.jooble.org/jdp/758259936409137487"
     },
     {
-      "sourceId": "jb--274001667659805456",
+      "sourceId": "jb--8174396515446444196",
       "status": "Nouvelle",
-      "title": "Préparateur en pharmacie en pharmacie à usage intérieur centralisée",
-      "employer": "Centre d'action sociale de la ville de Paris CASVP",
-      "location": "Paris 15e",
+      "title": "Préparateur en pharmacie hospitalière temps plein pôle médico-transversal pharmacie centrale de villejuif - h/f",
+      "employer": "GROUPE HOSPITALIER FONDATION VALLEE - PAUL GUIRAUD",
+      "location": "Villejuif, Val-de-Marne",
       "contract": "À vérifier",
-      "date": "2026-09-11",
+      "date": "2026-09-28",
+      "pay": "Non communiqué",
+      "adequation": "Moyenne",
+      "diploma": "",
+      "note": "...produits périmés et aux inventaires réguliers Réaliser les préparations magistrales et contribuer aux vigil · Temps plein",
+      "link": "https://fr.jooble.org/jdp/-8174396515446444196"
+    },
+    {
+      "sourceId": "jb--2110199175978350285",
+      "status": "Nouvelle",
+      "title": "Préparateur en pharmacie UPC temps plein H/F",
+      "employer": "Non communiqué",
+      "location": "Nogent-sur-Marne, Val-de-Marne",
+      "contract": "Intérim",
+      "date": "2026-09-25",
       "pay": "Non communiqué",
       "adequation": "Élevée",
       "diploma": "",
-      "note": "...en direction des séniors parisiens les plus vulnérables. La pharmacie à usage intérieur centralisée et robo",
-      "link": "https://fr.jooble.org/jdp/-274001667659805456"
+      "note": "...de production des Cytotoxiques (UPC) fabrique environ 28000 préparations cytotoxiques par an pour 6 établis · Intérimaire",
+      "link": "https://fr.jooble.org/jdp/-2110199175978350285"
     },
     {
-      "sourceId": "jb--594431740619958770",
+      "sourceId": "jb-7500843515165497370",
       "status": "Nouvelle",
-      "title": "Préparateur en pharmacie - secteur médicaments F/H",
-      "employer": "AP-HP Centre - NECKER",
+      "title": "Préparateur en pharmacie en pharmacie à usage intérieur centralisée F/H",
+      "employer": "Ville de Paris",
       "location": "Paris 15e",
-      "contract": "Intérim",
-      "date": "2026-09-30",
-      "pay": "25k € a 50k €/an",
-      "adequation": "Moyenne",
+      "contract": "À vérifier",
+      "date": "2026-10-12",
+      "pay": "Non communiqué",
+      "adequation": "Élevée",
       "diploma": "",
-      "note": "...de santé maladies rares. Votre mission: Gérer les flux de la pharmacie centrale Piloter la gestion des stoc · Temps plein",
-      "link": "https://fr.jooble.org/jdp/-594431740619958770"
+      "note": "...ergothér., psychomotr., orthopt., tech.lab.méd., manip.radios, préparateur pharma., diététicien... ...en di · Temps plein",
+      "link": "https://fr.jooble.org/jdp/7500843515165497370"
     },
     {
       "sourceId": "jb-6711864934587213694",
@@ -763,6 +731,20 @@
       "link": "https://fr.jooble.org/jdp/-6922178154381069110"
     },
     {
+      "sourceId": "jb--6433014516340976963",
+      "status": "Nouvelle",
+      "title": "Préparateur en pharmacie DMI - H/F",
+      "employer": "Non communiqué",
+      "location": "Antony, 92160",
+      "contract": "CDI",
+      "date": "2026-10-19",
+      "pay": "Non communiqué",
+      "adequation": "Élevée",
+      "diploma": "",
+      "note": "...naissances, 2 salles de césariennes, 1 salle de déambulation. MISSION L’Hôpital privé d’Antony recherche un · Temps plein",
+      "link": "https://fr.jooble.org/jdp/-6433014516340976963"
+    },
+    {
       "sourceId": "jb-1242958378710312417",
       "status": "Nouvelle",
       "title": "Préparateur de commandes/opérateur de conditionnement - pharmaceutique (H/F)",
@@ -777,20 +759,6 @@
       "link": "https://fr.jooble.org/jdp/1242958378710312417"
     },
     {
-      "sourceId": "jb--6957794119235612562",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie (H/F)",
-      "employer": "Grande Pharmacie De L'Europe",
-      "location": "Les Pavillons-sous-Bois, Seine-Saint-Denis",
-      "contract": "À vérifier",
-      "date": "2026-10-02",
-      "pay": "Non communiqué",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "...Un nouveau chapitre commence ! La Grande Pharmacie de l’Europe aux Pavillons-sous-Bois (93) TRANSFÈRE bient · Temps plein",
-      "link": "https://fr.jooble.org/jdp/-6957794119235612562"
-    },
-    {
       "sourceId": "jb-1815683035163786705",
       "status": "Nouvelle",
       "title": "Préparateur en pharmacie (H/F)",
@@ -803,6 +771,20 @@
       "diploma": "",
       "note": "- La Pharmacie Centrale de Gagny (93) recherche un(e) préparateur/ trice pour compléter son équipe. - Le poste · Temps plein",
       "link": "https://fr.jooble.org/jdp/1815683035163786705"
+    },
+    {
+      "sourceId": "jb--6957794119235612562",
+      "status": "Nouvelle",
+      "title": "Préparateur en pharmacie (H/F)",
+      "employer": "Grande Pharmacie De L'Europe",
+      "location": "Les Pavillons-sous-Bois, Seine-Saint-Denis",
+      "contract": "À vérifier",
+      "date": "2026-10-02",
+      "pay": "Non communiqué",
+      "adequation": "Moyenne",
+      "diploma": "",
+      "note": "...Un nouveau chapitre commence ! La Grande Pharmacie de l’Europe aux Pavillons-sous-Bois (93) TRANSFÈRE bient · Temps plein",
+      "link": "https://fr.jooble.org/jdp/-6957794119235612562"
     },
     {
       "sourceId": "jb-7058372939725397725",
