@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-26T13:29:06+00:00",
+  "updatedAt": "2026-11-27T13:25:15+00:00",
   "sources": {
     "Jooble": {
       "ok": true,
-      "count": 37,
-      "updatedAt": "2026-11-26T13:29:14+00:00"
+      "count": 32,
+      "updatedAt": "2026-11-27T13:25:22+00:00"
     }
   },
   "offers": [
@@ -23,6 +23,20 @@
       "link": "https://fr.jooble.org/jdp/1901897382830960628"
     },
     {
+      "sourceId": "jb--4398412333496492581",
+      "status": "À vérifier",
+      "title": "Préparateur en pharmacie hospitalière H/F Chimiothérapie / Paris Ouest",
+      "employer": "Madeline RH",
+      "location": "Boulogne-Billancourt",
+      "contract": "À vérifier",
+      "date": "2026-11-27",
+      "pay": "Non communiqué",
+      "adequation": "Élevée",
+      "diploma": "",
+      "note": "...internationale) et un niveau élevé de satisfaction patients. Il propose un modèle d'exercice axé sur la pha · Temps plein",
+      "link": "https://fr.jooble.org/desc/-4398412333496492581"
+    },
+    {
       "sourceId": "jb--5999060118749079683",
       "status": "À vérifier",
       "title": "Préparateur en Pharmacie Hospitalière H/F",
@@ -35,6 +49,20 @@
       "diploma": "",
       "note": "...professionnels et l'Institut de Formation Robert Ballanger, qui prépare aux diplômes d'infirmier, auxiliair",
       "link": "https://fr.jooble.org/jdp/-5999060118749079683"
+    },
+    {
+      "sourceId": "jb--3077268118394657346",
+      "status": "Nouvelle",
+      "title": "Préparateur en pharmacie — H/F",
+      "employer": "I-Intérim",
+      "location": "Paris",
+      "contract": "Intérim",
+      "date": "2026-11-10",
+      "pay": "21 €/heure",
+      "adequation": "Moyenne",
+      "diploma": "",
+      "note": "Préparateur en pharmacie — H/F Depuis 10 ans, i-intérim a bâti une solide réputation dans le domaine du recrut · Intérimaire",
+      "link": "https://fr.jooble.org/jdp/-3077268118394657346"
     },
     {
       "sourceId": "jb-7057704874136287431",
@@ -53,38 +81,6 @@
         "jb-7057704874136287431",
         "jb--6130536125466208361"
       ]
-    },
-    {
-      "sourceId": "jb--4398412333496492581",
-      "status": "À vérifier",
-      "title": "Préparateur en pharmacie hospitalière H/F Chimiothérapie / Paris Ouest",
-      "employer": "Madeline RH",
-      "location": "Boulogne-Billancourt",
-      "contract": "À vérifier",
-      "date": "2026-11-26",
-      "pay": "Non communiqué",
-      "adequation": "Élevée",
-      "diploma": "",
-      "note": "...internationale) et un niveau élevé de satisfaction patients. Il propose un modèle d'exercice axé sur la pha · Temps plein",
-      "link": "https://fr.jooble.org/desc/-4398412333496492581",
-      "sourceIds": [
-        "jb--4398412333496492581",
-        "jb-5587867225459728116"
-      ]
-    },
-    {
-      "sourceId": "jb--3077268118394657346",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie — H/F",
-      "employer": "I-Intérim",
-      "location": "Paris",
-      "contract": "Intérim",
-      "date": "2026-11-10",
-      "pay": "21 €/heure",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "Préparateur en pharmacie — H/F Depuis 10 ans, i-intérim a bâti une solide réputation dans le domaine du recrut · Intérimaire",
-      "link": "https://fr.jooble.org/jdp/-3077268118394657346"
     },
     {
       "sourceId": "jb--6998619213652836900",
@@ -107,7 +103,7 @@
       "employer": "Pharmacie du Soleil",
       "location": "Gentilly, Val-de-Marne",
       "contract": "À vérifier",
-      "date": "2026-11-24",
+      "date": "2026-11-26",
       "pay": "Non communiqué",
       "adequation": "Moyenne",
       "diploma": "",
@@ -129,6 +125,20 @@
       "link": "https://fr.jooble.org/jdp/6886176711233134946"
     },
     {
+      "sourceId": "jb--8236962264906227882",
+      "status": "Nouvelle",
+      "title": "PRÉPARATEUR EN PHARMACIE (F/H) CDD DE 6 MOIS À PARIS",
+      "employer": "Appel Médical - Groupe Randstad",
+      "location": "Paris",
+      "contract": "CDD",
+      "date": "2026-11-10",
+      "pay": "Non communiqué",
+      "adequation": "Moyenne",
+      "diploma": "",
+      "note": "PRÉPARATEUR EN PHARMACIE (F/H) CDD DE 6 MOIS À PARIS CDD du 14/12/2026 au 25/06/2027, horaires 09h30-17h30, ac · Intérimaire",
+      "link": "https://fr.jooble.org/jdp/-8236962264906227882"
+    },
+    {
       "sourceId": "jb-4831332890215453575",
       "status": "Nouvelle",
       "title": "PRÉPARATEUR EN PHARMACIE (F/H) CDD PARIS 2 MOIS",
@@ -143,18 +153,18 @@
       "link": "https://fr.jooble.org/jdp/4831332890215453575"
     },
     {
-      "sourceId": "jb--8236962264906227882",
+      "sourceId": "jb-2185622858811045434",
       "status": "Nouvelle",
-      "title": "PRÉPARATEUR EN PHARMACIE (F/H) CDD DE 6 MOIS À PARIS",
-      "employer": "Appel Médical - Groupe Randstad",
-      "location": "Paris",
+      "title": "Préparateur en pharmacie (H/F) - pharmacie HAD",
+      "employer": "FONDATION SANTE SERVICE",
+      "location": "Villeneuve-la-Garenne, Hauts-de-Seine",
       "contract": "CDD",
-      "date": "2026-11-10",
-      "pay": "Non communiqué",
-      "adequation": "Moyenne",
+      "date": "2026-11-26",
+      "pay": "25k € a 35k €/an",
+      "adequation": "Élevée",
       "diploma": "",
-      "note": "PRÉPARATEUR EN PHARMACIE (F/H) CDD DE 6 MOIS À PARIS CDD du 14/12/2026 au 25/06/2027, horaires 09h30-17h30, ac · Intérimaire",
-      "link": "https://fr.jooble.org/jdp/-8236962264906227882"
+      "note": "...pour recevoir le lien de connexion. Votre mission: Dans le cadre de son développement, la Pharmacie à Usage · Intérimaire",
+      "link": "https://fr.jooble.org/jdp/2185622858811045434"
     },
     {
       "sourceId": "jb-4660313742521245352",
@@ -199,6 +209,20 @@
       "link": "https://fr.jooble.org/jdp/-186380714070363878"
     },
     {
+      "sourceId": "jb--7759441947266886564",
+      "status": "Nouvelle",
+      "title": "Préparateur en pharmacie H/F - Nanterre 92",
+      "employer": "JoberGroup",
+      "location": "Nanterre, 92000",
+      "contract": "À vérifier",
+      "date": "2026-11-27",
+      "pay": "20.4k € a 26.4k €/an",
+      "adequation": "Moyenne",
+      "diploma": "",
+      "note": "...paramédical à votre écoute. Un service 100% gratuit dont 99% de nos candidats sont satisfaits. Présentation",
+      "link": "https://fr.jooble.org/jdp/-7759441947266886564"
+    },
+    {
       "sourceId": "jb-8326159174388182389",
       "status": "Nouvelle",
       "title": "Préparateur en pharmacie (H/F)",
@@ -213,60 +237,32 @@
       "link": "https://fr.jooble.org/jdp/8326159174388182389"
     },
     {
-      "sourceId": "jb-6138288084582792911",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie H/F - Nanterre 92",
-      "employer": "Emploi Aide préparateur en pharmacie Nanterre 92 | JoberGrou...",
-      "location": "Nanterre, 92000",
-      "contract": "À vérifier",
-      "date": "2026-11-20",
-      "pay": "1 700 € a 2 200 €",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "Préparateur en pharmacie H/F - Nanterre 92 Emploi Préparateur en pharmacie H/F - Nanterre 92 Vous êtes prépara · Temps plein",
-      "link": "https://fr.jooble.org/jdp/6138288084582792911"
-    },
-    {
-      "sourceId": "jb--6080958096789882614",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie H/F - Rueil-Malmaison 92",
-      "employer": "Emploi Aide préparateur en pharmacie Rueil-Malmaison 92 | Jo...",
-      "location": "Rueil-Malmaison, Hauts-de-Seine",
-      "contract": "CDI",
-      "date": "2026-11-22",
-      "pay": "1 800 € a 2 500 €",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "Préparateur en pharmacie H/F - Rueil-Malmaison 92 Emploi Préparateur en pharmacie H/F - Rueil-Malmaison 92 Nou · Temps plein",
-      "link": "https://fr.jooble.org/jdp/-6080958096789882614"
-    },
-    {
-      "sourceId": "jb-2340016911061393097",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie (H/F) Le Plessis-Robinson (92)",
-      "employer": "PMSM",
-      "location": "Le Plessis-Robinson, Hauts-de-Seine",
-      "contract": "CDI",
-      "date": "2026-10-29",
-      "pay": "Non communiqué",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "Préparateur en pharmacie (H/F) Le Plessis-Robinson (92) 1264-75 Le Plessis-Robinson (92) - CDI - Temps plein ( · Temps plein",
-      "link": "https://fr.jooble.org/jdp/2340016911061393097"
-    },
-    {
-      "sourceId": "jb--7942725621398056663",
+      "sourceId": "jb--6660105737656112845",
       "status": "Nouvelle",
       "title": "Préparateur en pharmacie H/F - Garches 92",
-      "employer": "Emploi Aide préparateur en pharmacie Garches 92 | JoberGroup",
+      "employer": "JoberGroup",
       "location": "Garches, Hauts-de-Seine",
-      "contract": "CDI",
+      "contract": "À vérifier",
       "date": "2026-11-20",
-      "pay": "1 800 € a 2 500 €",
+      "pay": "21.6k € a 30k €/an",
       "adequation": "Moyenne",
       "diploma": "",
-      "note": "Préparateur en pharmacie H/F - Garches 92 Emploi Préparateur en pharmacie H/F - Garches 92 Nous recrutons un p · Temps plein",
-      "link": "https://fr.jooble.org/jdp/-7942725621398056663"
+      "note": "...paramédical à votre écoute. Un service 100% gratuit dont 99% de nos candidats sont satisfaits. Présentation",
+      "link": "https://fr.jooble.org/jdp/-6660105737656112845"
+    },
+    {
+      "sourceId": "jb-6361342883927293866",
+      "status": "Nouvelle",
+      "title": "Préparateur en pharmacie H/F - Rueil-Malmaison 92",
+      "employer": "JoberGroup",
+      "location": "Rueil-Malmaison, Hauts-de-Seine",
+      "contract": "À vérifier",
+      "date": "2026-11-22",
+      "pay": "21.6k € a 30k €/an",
+      "adequation": "Moyenne",
+      "diploma": "",
+      "note": "...paramédical à votre écoute. Un service 100% gratuit dont 99% de nos candidats sont satisfaits. Présentation",
+      "link": "https://fr.jooble.org/jdp/6361342883927293866"
     },
     {
       "sourceId": "jb--6915598977575562434",
@@ -281,6 +277,20 @@
       "diploma": "",
       "note": "...MISSION L'Hôpital Privé Geoffroy Saint-Hilaire recherche un(e) préparateur( trice) en Contrat à Durée Indét · Temps plein",
       "link": "https://fr.jooble.org/jdp/-6915598977575562434"
+    },
+    {
+      "sourceId": "jb-2340016911061393097",
+      "status": "Nouvelle",
+      "title": "Préparateur en pharmacie (H/F) Le Plessis-Robinson (92)",
+      "employer": "PMSM",
+      "location": "Le Plessis-Robinson, Hauts-de-Seine",
+      "contract": "CDI",
+      "date": "2026-10-29",
+      "pay": "Non communiqué",
+      "adequation": "Moyenne",
+      "diploma": "",
+      "note": "Préparateur en pharmacie (H/F) Le Plessis-Robinson (92) 1264-75 Le Plessis-Robinson (92) - CDI - Temps plein ( · Temps plein",
+      "link": "https://fr.jooble.org/jdp/2340016911061393097"
     },
     {
       "sourceId": "jb-6842773995123034429",
@@ -311,20 +321,6 @@
       "link": "https://fr.jooble.org/jdp/-313748207234785779"
     },
     {
-      "sourceId": "jb-9046363902690053694",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie — H/F",
-      "employer": "Centre de Néphrologie B. Braun Avitum France des Buttes-Chau...",
-      "location": "Paris",
-      "contract": "CDI",
-      "date": "2026-11-16",
-      "pay": "1 083.33 € a 1 345.88 €",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "Préparateur en pharmacie — H/F Nous recherchons un(e) préparateur(trice) en pharmacie, en CDI à temps partiel · Temps plein",
-      "link": "https://fr.jooble.org/jdp/9046363902690053694"
-    },
-    {
       "sourceId": "jb-931037240651861670",
       "status": "Nouvelle",
       "title": "Préparateur en pharmacie CHIMIOTHERAPIES F/H",
@@ -339,20 +335,6 @@
       "link": "https://fr.jooble.org/jdp/931037240651861670"
     },
     {
-      "sourceId": "jb--7282918057562962550",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie hospitalière F/H",
-      "employer": "PARIS SACLAY - BECLERE",
-      "location": "Clamart, Hauts-de-Seine",
-      "contract": "Intérim",
-      "date": "2026-11-19",
-      "pay": "2 000 € a 4 100 €",
-      "adequation": "Élevée",
-      "diploma": "",
-      "note": "...gériatrique. Votre mission: - Gestion, approvisionnements, préparation, détention, distribution des médicam · Intérimaire",
-      "link": "https://fr.jooble.org/jdp/-7282918057562962550"
-    },
-    {
       "sourceId": "jb--4670921937881080532",
       "status": "Nouvelle",
       "title": "Préparateur en pharmacie hospitalière - H/F",
@@ -365,34 +347,6 @@
       "diploma": "",
       "note": "du poste : La Pharmacie à Usage Intérieur (PUI) de l'EPS Erasme répond aux besoins pharmaceutiques des patient · Temps plein",
       "link": "https://fr.jooble.org/jdp/-4670921937881080532"
-    },
-    {
-      "sourceId": "jb-6361342883927293866",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie H/F - Rueil-Malmaison 92",
-      "employer": "JoberGroup",
-      "location": "Rueil-Malmaison, Hauts-de-Seine",
-      "contract": "À vérifier",
-      "date": "2026-11-22",
-      "pay": "21.6k € a 30k €/an",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "...paramédical à votre écoute. Un service 100% gratuit dont 99% de nos candidats sont satisfaits. Présentation",
-      "link": "https://fr.jooble.org/jdp/6361342883927293866"
-    },
-    {
-      "sourceId": "jb--6660105737656112845",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie H/F - Garches 92",
-      "employer": "JoberGroup",
-      "location": "Garches, Hauts-de-Seine",
-      "contract": "À vérifier",
-      "date": "2026-11-20",
-      "pay": "21.6k € a 30k €/an",
-      "adequation": "Moyenne",
-      "diploma": "",
-      "note": "...paramédical à votre écoute. Un service 100% gratuit dont 99% de nos candidats sont satisfaits. Présentation",
-      "link": "https://fr.jooble.org/jdp/-6660105737656112845"
     },
     {
       "sourceId": "jb--4885683019949233928",
@@ -429,7 +383,7 @@
       "employer": "Grande Pharmacie des Jonquilles",
       "location": "Neuilly-sur-Marne, Seine-Saint-Denis",
       "contract": "CDD",
-      "date": "2026-11-24",
+      "date": "2026-11-26",
       "pay": "Non communiqué",
       "adequation": "Moyenne",
       "diploma": "",
@@ -451,32 +405,18 @@
       "link": "https://fr.jooble.org/jdp/-6653303349508641495"
     },
     {
-      "sourceId": "jb-1405002025583569030",
-      "status": "Nouvelle",
-      "title": "Préparateur en pharmacie hospitalière - h/f",
-      "employer": "EPS Erasme",
-      "location": "Antony, 92160",
-      "contract": "À vérifier",
-      "date": "2026-11-05",
-      "pay": "Non communiqué",
-      "adequation": "Élevée",
-      "diploma": "",
-      "note": "...ambulatoire des soins en psychiatrie. Description du poste : La Pharmacie à Usage Intérieur (PUI) de l’EPS · Temps plein",
-      "link": "https://fr.jooble.org/jdp/1405002025583569030"
-    },
-    {
-      "sourceId": "jb--946682979122633394",
+      "sourceId": "jb-1412093487782210400",
       "status": "Nouvelle",
       "title": "Préparateur en Pharmacie Hospitalière en CCD 6 mois F/ H ou H/F à compter du 01/01/2027",
-      "employer": "Etablissement public de santé national EPSNF",
+      "employer": "Non communiqué",
       "location": "Fresnes, Val-de-Marne",
       "contract": "CDI",
       "date": "2026-11-23",
       "pay": "Non communiqué",
       "adequation": "Élevée",
       "diploma": "",
-      "note": "...pharmacien : participer dans le respect des bonnes pratiques de pharmacie hospitalière, et dans le respect",
-      "link": "https://fr.jooble.org/jdp/-946682979122633394"
+      "note": "...pharmacien : participer dans le respect des bonnes pratiques de pharmacie hospitalière, et dans le respect · Intérimaire",
+      "link": "https://fr.jooble.org/jdp/1412093487782210400"
     },
     {
       "sourceId": "jb--2828298839717881384",
@@ -485,7 +425,7 @@
       "employer": "Pharmacie de la pépinière",
       "location": "Noiseau, Val-de-Marne",
       "contract": "À vérifier",
-      "date": "2026-11-25",
+      "date": "2026-11-26",
       "pay": "Non communiqué",
       "adequation": "Moyenne",
       "diploma": "",
